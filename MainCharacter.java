@@ -9,7 +9,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 public class MainCharacter extends Actor
 {
     SimpleTimer animationTimer = new SimpleTimer();
-    GreenfootImage[] idle = new GreenfootImage[7];
+    GreenfootImage[] walk = new GreenfootImage[7];
     
     /**
      * Character Animations
@@ -18,8 +18,8 @@ public class MainCharacter extends Actor
     {
         for(int i = 0; i < 7; i++)
         {
-            idle[i] = new GreenfootImage("images/WalkCycle/Walk00" + i + ".png");
-            idle[i].scale(50,70);
+            walk[i] = new GreenfootImage("images/WalkCycle/Walk00" + i + ".png");
+            walk[i].scale(50,70);
         }
     }
     
@@ -32,13 +32,54 @@ public class MainCharacter extends Actor
         }
         animationTimer.mark();
         
-        setImage(idle[imageIndex]);
-        imageIndex = (imageIndex + 1) % idle.length;
+        setImage(walk[imageIndex]);
+        imageIndex = (imageIndex + 1) % walk.length;
+    }
+    
+    // Sprint animation
+    public void animateSprintMainCharacter()
+    {
+        if(animationTimer.millisElapsed() < 50)
+        {
+            return;
+        }
+        animationTimer.mark();
+        
+        setImage(walk[imageIndex]);
+        imageIndex = (imageIndex + 1) % walk.length;
     }
     
     public void act()
     {
-        if(Greenfoot.isKeyDown("a"))
+        
+        
+        // Sprint by holding shift
+        if(Greenfoot.isKeyDown("a") && Greenfoot.isKeyDown("shift"))
+        {
+            setRotation(180);
+            move(6);
+            animateSprintMainCharacter();
+        }
+        else if(Greenfoot.isKeyDown("d") && Greenfoot.isKeyDown("shift"))
+        {
+            setRotation(0);
+            move(6);
+            animateSprintMainCharacter();
+        }
+
+        else if(Greenfoot.isKeyDown("w") && Greenfoot.isKeyDown("shift"))
+        {
+            setRotation(270);
+            move(6);
+            animateSprintMainCharacter();
+        }
+        else if(Greenfoot.isKeyDown("s") && Greenfoot.isKeyDown("shift"))
+        {
+            setRotation(90);
+            move(6);
+            animateSprintMainCharacter();
+        }
+        else if(Greenfoot.isKeyDown("a"))
         {
             setRotation(180);
             move(3);
@@ -69,4 +110,9 @@ public class MainCharacter extends Actor
             
         }
     }
+    
+
+    
+
+
 }

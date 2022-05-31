@@ -8,7 +8,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class Title extends World
 {
-    Label titleLabel = new Label("To Be Determined", 75);
+    Label titleLabel = new Label("To Be Determined", 150);
     
     /**
      * Constructor for objects of class Title.
@@ -17,9 +17,9 @@ public class Title extends World
     public Title()
     {    
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
-        super(600, 400, 1); 
+        super(1200, 800, 1); 
         
-        addObject(titleLabel, 300, 100);
+        addObject(titleLabel, 600, 200);
         prepare();
     }
     
@@ -27,7 +27,7 @@ public class Title extends World
     {
         if(Greenfoot.isKeyDown("space"))
         {
-            MyWorld gameWorld = new MyWorld();
+            FirstWorld gameWorld = new FirstWorld();
             Greenfoot.setWorld(gameWorld);
         }
     }
