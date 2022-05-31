@@ -18,7 +18,7 @@ public class MainCharacter extends Actor
     {
         for(int i = 0; i < 7; i++)
         {
-            idle[i] = new GreenfootImage("images/Walk00" + i + ".png");
+            idle[i] = new GreenfootImage("images/WalkCycle/Walk00" + i + ".png");
             idle[i].scale(50,70);
         }
     }
@@ -65,7 +65,7 @@ public class MainCharacter extends Actor
         }
         else
         {
-            setImage("images/MainIdle.png");
+            setImage("images/WalkCycle/MainIdle.png");
             
         }
     }
