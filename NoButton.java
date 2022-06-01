@@ -27,7 +27,8 @@ public class NoButton extends Actor
         {
             FirstWorld world = (FirstWorld) getWorld();
             world.addObject(text2, 600, 650);
-            
+            Road road1 = new Road();
+            world.addObject(road1, 800, 0);
         }
     }
 }

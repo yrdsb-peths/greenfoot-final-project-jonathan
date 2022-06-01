@@ -6,7 +6,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  * @author Jonathan Zhao
  * @version 2
  */
-public class FriendNPC extends Actor
+public class TutorialNPC extends Actor
 {
     public boolean text1Spawned = false;
     public boolean instruction1Spawned = false;

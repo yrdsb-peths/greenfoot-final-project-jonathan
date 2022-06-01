@@ -38,6 +38,21 @@ public class Text extends Actor
         {
             setImage("images/CharacterText/Text4.png");
         }
+        
+        if(id == 5)
+        {
+            setImage("images/CharacterText/Text5.png");
+        }
+        
+        if(id == 6)
+        {
+            setImage("images/CharacterText/Text6.png");
+        }
+        
+        if(id == 7)
+        {
+            setImage("images/CharacterText/Text7.png");
+        }
     }
     
     public void act()

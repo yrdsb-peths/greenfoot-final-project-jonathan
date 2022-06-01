@@ -13,7 +13,6 @@ public class FirstWorld extends World
      * Constructor for objects of class MyWorld.
      * 
      */
-    public static int currentTextNumber = 1;
     
     public FirstWorld()
     {    
@@ -24,9 +23,8 @@ public class FirstWorld extends World
         addObject(mainCharacter, 400, 400);
         
         // Create a friendly NPC
-        FriendNPC friendNPC = new FriendNPC();
+        TutorialNPC friendNPC = new TutorialNPC();
         addObject(friendNPC, 800, 400);
-        
         
     }
     
