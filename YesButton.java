@@ -1,7 +1,7 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * A clickable yes button 
+ * A clickable yes button for the first conversation.
  * 
  * @author Jonathan Zhao 
  * @May 31
@@ -52,6 +52,10 @@ public class YesButton extends Actor
             world.addObject(text7, 600, 650);
             Road road1 = new Road();
             world.addObject(road1, 800, 0);
+            Wallet wallet = new Wallet();
+            Wallet.wallet += 5;
+            Wallet.walletLabel.setValue("$" + Wallet.wallet);
+            world.addObject(Wallet.walletLabel, 40, 20);
         }
         
     }

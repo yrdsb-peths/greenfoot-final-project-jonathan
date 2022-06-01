@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.target=TutorialNPC2Fighting
+comment0.text=\r\n\ Second\ tutorial\ NPC\ fighting\r\n\ \r\n\ @author\ Jonathan\ Zhao\r\n\ @version\ June\ 1\r\n
+comment1.params=
+comment1.target=TutorialNPC2Fighting()
+comment2.params=
+comment2.target=void\ animateNPCFight()
+comment3.params=
+comment3.target=void\ act()
+numComments=4

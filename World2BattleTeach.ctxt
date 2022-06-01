@@ -1,0 +1,6 @@
+#BlueJ class context
+comment0.target=World2BattleTeach
+comment0.text=\r\n\ The\ battlefield.\ Text\ will\ show\ up\ here\ in\ order\r\n\ to\ teach\ the\ player\ how\ to\ fight.\r\n\ \r\n\ @author\ Jonathan\ Zhao\r\n\ @version\ June\ 1\r\n
+comment1.params=
+comment1.target=World2BattleTeach()
+numComments=2

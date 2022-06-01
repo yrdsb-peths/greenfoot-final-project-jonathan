@@ -1,10 +1,10 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class NoButton here.
+ * Creates a No button for the first conversation
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @author Jonathan Zhao 
+ * @version May 31
  */
 public class NoButton extends Actor
 {
@@ -29,6 +29,9 @@ public class NoButton extends Actor
             world.addObject(text2, 600, 650);
             Road road1 = new Road();
             world.addObject(road1, 800, 0);
+            Wallet wallet = new Wallet();
+            Wallet.walletLabel.setValue("$" + Wallet.wallet);
+            world.addObject(Wallet.walletLabel, 40, 20);
         }
     }
 }

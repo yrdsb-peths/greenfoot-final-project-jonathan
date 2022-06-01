@@ -7,8 +7,8 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  * @version 1
  */
 public class FirstWorld extends World
-{
-
+{   
+    
     /**
      * Constructor for objects of class MyWorld.
      * 
@@ -22,11 +22,14 @@ public class FirstWorld extends World
         MainCharacter mainCharacter = new MainCharacter();
         addObject(mainCharacter, 400, 400);
         
+        
         // Create a friendly NPC
         TutorialNPC friendNPC = new TutorialNPC();
         addObject(friendNPC, 800, 400);
         
+        Wallet.resetStatic();
     }
+    
     
 
 }

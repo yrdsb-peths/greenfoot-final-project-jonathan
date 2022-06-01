@@ -1,25 +1,22 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class World2 here.
+ * World 2 after the fight
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @author Jonathan Zhao
+ * @version June 1
  */
-public class World2 extends World
+public class World2Ver2 extends World
 {
 
-    /**
-     * Constructor for objects of class World2.
-     * 
-     */
-    public World2()
+    
+    public World2Ver2()
     {    
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
         super(1200, 800, 1); 
         
         MainCharacter mainCharacter = new MainCharacter();
-        addObject(mainCharacter, 800, 800);
+        addObject(mainCharacter, 800, 70);
         
         // Create a friendly NPC
         TutorialNPC2 friendNPC = new TutorialNPC2();

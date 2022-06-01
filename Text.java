@@ -1,10 +1,10 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class Text here.
+ * Texts in the game.
  * 
  * @author Jonathan Zhao
- * @version (a version number or a date)
+ * @version June 1
  */
 public class Text extends Actor
 {
@@ -52,6 +52,36 @@ public class Text extends Actor
         if(id == 7)
         {
             setImage("images/CharacterText/Text7.png");
+        }
+        
+        if(id == 8)
+        {
+            setImage("images/CharacterText/Text8.png");
+        }
+        
+        if(id == 9)
+        {
+            setImage("images/CharacterText/Text9.png");
+        }
+        
+        if(id == 10)
+        {
+            setImage("images/CharacterText/Text10.png");
+        }
+        
+        if(id == 11)
+        {
+            setImage("images/CharacterText/Text11.png");
+        }
+        
+        if(id == 12)
+        {
+            setImage("images/CharacterText/Text12.png");
+        }
+        
+        if(id == 13)
+        {
+            setImage("images/CharacterText/Text13.png");
         }
     }
     
