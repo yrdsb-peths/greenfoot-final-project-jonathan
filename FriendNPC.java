@@ -8,26 +8,41 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class FriendNPC extends Actor
 {
-    /**
-     * Act - do whatever the FriendNPC wants to do. This method is called whenever
-     * the 'Act' or 'Run' button gets pressed in the environment.
-     */
+    public boolean text1Spawned = false;
+    public boolean instruction1Spawned = false;
     
     public void act()
     {
         setImage("images/NPCs/FriendNPC.png");  
         talk();
     }
-    
+
     // Interact with main character
-    private GreenfootImage text1;
+      
     public void talk()
     {
-        text1 = new GreenfootImage("images/CharacterText/Text1.png");
-        if(isTouching(MainCharacter.class))
+        if(isTouching(MainCharacter.class) && !instruction1Spawned)
         {
-            setImage(text1);
+            FirstWorld world = (FirstWorld) getWorld();
+            Label instruction1 = new Label("Press <f> to interact", 50);
+            world.addObject(instruction1, 800, 300);
+            instruction1Spawned = true;
             
         }
+        
+        
+        if(isTouching(MainCharacter.class) && Greenfoot.isKeyDown("f") && !text1Spawned)
+        { 
+            FirstWorld world = (FirstWorld) getWorld();
+            Text text1 = new Text(1);
+            YesButton yesButton1 = new YesButton();
+            NoButton noButton1 = new NoButton();
+            world.addObject(text1, 600, 650);
+            world.addObject(yesButton1, 760, 700);
+            world.addObject(noButton1, 890, 700);
+            text1Spawned = true;
+        }
+        
+        
     }
 }
