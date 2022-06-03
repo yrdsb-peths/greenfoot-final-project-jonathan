@@ -1,0 +1,6 @@
+#BlueJ class context
+comment0.target=BuyOkButton
+comment0.text=\r\n\ Gets\ the\ player\ to\ acknowledge\ that\ they\ can\ not\ afford\ the\ item\r\n\ \r\n\ @author\ Jonathan\ Zhao\r\n\ @version\ June\ 3\r\n
+comment1.params=
+comment1.target=void\ act()
+numComments=2

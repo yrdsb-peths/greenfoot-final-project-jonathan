@@ -2,5 +2,7 @@
 comment0.target=SpearOfKulbally
 comment0.text=\r\n\ One\ of\ the\ Holy\ Relics\r\n\ \r\n\ @author\ Jonathan\ Zhao\ \r\n\ @version\ June\ 2\r\n
 comment1.params=
-comment1.target=void\ act()
-numComments=2
+comment1.target=void\ resetStatic()
+comment2.params=
+comment2.target=void\ act()
+numComments=3

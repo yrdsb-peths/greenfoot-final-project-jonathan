@@ -10,16 +10,22 @@ public class TheShop extends World
 {
     World returnWorld;
     
+    public static boolean lastHolyRelic = false;
+    public static void resetStatic()
+    {
+        lastHolyRelic = false;
+    }
+    
     public TheShop(World returnWorld)
     {    
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
         super(1200, 800, 1); 
         this.returnWorld = returnWorld;
-        Potion potion = new Potion();
+        ShopPotion potion = new ShopPotion();
         addObject(potion, 200, 450);
         Text text40 = new Text(40);
         addObject(text40, 600, 100);
-        LeaveStoreButton leaveStoreButton = new LeaveStoreButton(returnWorld);
+        LeaveStoreButton leaveStoreButton = new LeaveStoreButton();
         addObject(leaveStoreButton, 150, 100);
         // Add wallet
         Wallet wallet = new Wallet();
@@ -37,20 +43,20 @@ public class TheShop extends World
         
         if(!GobletOfYabba.hasGoblet)
         {
-            GobletOfYabba gobletOfYabba = new GobletOfYabba();
-            addObject(gobletOfYabba, 500, 450);
+            ShopGoblet shopGoblet = new ShopGoblet();
+            addObject(shopGoblet, 500, 450);
         }
         
         if(!SpearOfKulbally.hasSpear)
         {
-            SpearOfKulbally spearOfKulbally = new SpearOfKulbally();
-            addObject(spearOfKulbally, 750, 500);
+            ShopSpear shopSpear = new ShopSpear();
+            addObject(shopSpear, 750, 500);
         }
         
         if(!TomeOfRebaer.hasTome)
         {
-            TomeOfRebaer tomeOfRebaer = new TomeOfRebaer();
-            addObject(tomeOfRebaer, 1025, 500);
+            ShopTome shopTome = new ShopTome();
+            addObject(shopTome, 1025, 500);
         }
         
         addObject(gobletPriceTag, 500, 450);

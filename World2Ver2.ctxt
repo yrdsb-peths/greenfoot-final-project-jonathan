@@ -3,4 +3,6 @@ comment0.target=World2Ver2
 comment0.text=\r\n\ World\ 2\ after\ the\ fight\r\n\ \r\n\ @author\ Jonathan\ Zhao\r\n\ @version\ June\ 1\r\n
 comment1.params=
 comment1.target=World2Ver2()
-numComments=2
+comment2.params=
+comment2.target=void\ act()
+numComments=3

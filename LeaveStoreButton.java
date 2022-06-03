@@ -8,12 +8,6 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class LeaveStoreButton extends Actor
 {
-    World returnWorld;
-    
-    public LeaveStoreButton(World returnWorld)
-    {
-        this.returnWorld = returnWorld;
-    }
     
     
     public void act()
@@ -28,7 +22,7 @@ public class LeaveStoreButton extends Actor
         }
         if(Greenfoot.mouseClicked(this))
         {
-            Greenfoot.setWorld(returnWorld);
+            Greenfoot.setWorld(new World2Ver4(getWorld()));
         }
     }
 }

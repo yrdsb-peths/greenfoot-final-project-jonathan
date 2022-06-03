@@ -1,0 +1,8 @@
+#BlueJ class context
+comment0.target=UsePotionYesButton
+comment0.text=\r\n\ Confirms\ to\ use\ a\ potion\r\n\ \r\n\ @author\ Jonathan\ Zhao\ \r\n\ @version\ June\ 3\r\n
+comment1.params=returnWorld
+comment1.target=UsePotionYesButton(greenfoot.World)
+comment2.params=
+comment2.target=void\ act()
+numComments=3

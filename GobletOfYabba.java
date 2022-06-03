@@ -9,9 +9,14 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 public class GobletOfYabba extends Actor
 {
     public static boolean hasGoblet = false;
+    public static void resetStatic()
+    {
+        hasGoblet = false;
+    }
     
     public void act()
     {
         setImage("images/TheGobletOfYabba.png");
+        
     }
 }

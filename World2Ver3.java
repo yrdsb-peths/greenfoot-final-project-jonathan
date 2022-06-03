@@ -34,4 +34,9 @@ public class World2Ver3 extends World
         Wallet.walletLabel.setValue("$" + Wallet.wallet);
         addObject(Wallet.walletLabel, 100, 20);
     }
+    
+    public void act()
+    {
+        mainCharacterHPLabel.setValue("HP: " + MainCharacterFighting.mainCharacterHP);
+    }
 }

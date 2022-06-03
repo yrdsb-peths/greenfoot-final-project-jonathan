@@ -8,21 +8,37 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class Potion extends Actor
 {
-    public static int numberPotions = 0;
+    public static int numberPotions = 5;
     public static boolean usePotion = false;
+
     public static void resetStatic()
     {
         numberPotions = 0;
     }
-    
+
     public void act()
     {
         setImage("images/Potion.png");
-        if(usePotion)
+        if(Greenfoot.mouseClicked(this))
         {
-            MainCharacterFighting.mainCharacterHP += 45;
-            
-            usePotion = false;
+            ItemBag world = (ItemBag) getWorld();
+            Text text41 = new Text(41); 
+            world.addObject(text41, 600, 400);
+            UsePotionYesButton yesButton = new UsePotionYesButton(getWorld());
+            world.addObject(yesButton, 400, 450);
+            UseItemNoButton noButton = new UseItemNoButton();
+            world.addObject(noButton, 800, 450);
+        }
+        
+    }
+    
+    public static void usePotion()
+    {
+        if(numberPotions > 0)
+        {
+            numberPotions -= 1;
+            MainCharacterFighting.mainCharacterHP += 40;
+
         }
     }
 }

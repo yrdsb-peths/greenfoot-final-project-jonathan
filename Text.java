@@ -7,14 +7,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  * @version June 1
  */
 public class Text extends Actor
-{
-    /**
-     * Act - do whatever the Text wants to do. This method is called whenever
-     * the 'Act' or 'Run' button gets pressed in the environment.
-     */
-    
-    
-    
+{  
     public Text(int id)
     {
         if(id == 1)
@@ -217,6 +210,91 @@ public class Text extends Actor
         if(id == 40)
         {
             setImage("images/TheShop.png");
+        }
+        
+        if(id == 41)
+        {
+            setImage("images/PotionUseConfirm.png");
+        }
+        
+        if(id == 42)
+        {
+            setImage("images/NoPotions.png");
+        }
+        
+        if(id == 43)
+        {
+            setImage("images/CharacterText/WannaBuyPotion.png");
+        }
+        
+        if(id == 44)
+        {
+            setImage("images/CharacterText/WannaBuyGoblet.png");
+        }
+        
+        if(id == 45)
+        {
+            setImage("images/CharacterText/WannaBuySpear.png");
+        }
+        
+        if(id == 46)
+        {
+            setImage("images/CharacterText/WannaBuyTome.png");
+        }
+        
+        if(id == 47)
+        {
+            setImage("images/CharacterText/Broke.png");
+        }
+        
+        if(id == 48)
+        {
+            setImage("images/CharacterText/Text48.png");
+        }
+        
+        if(id == 49)
+        {
+            setImage("images/CharacterText/Text49.png");
+        }
+        
+        if(id == 50)
+        {
+            setImage("images/CharacterText/Text50.png");
+        }
+        
+        if(id == 51)
+        {
+            setImage("images/CharacterText/Text51.png");
+        }
+        
+        if(id == 52)
+        {
+            setImage("images/CharacterText/Text52.png");
+        }
+        
+        if(id == 53)
+        {
+            setImage("images/CharacterText/Text53.png");
+        }
+        
+        if(id == 54)
+        {
+            setImage("images/CharacterText/Text54.png");
+        }
+        
+        if(id == 55)
+        {
+            setImage("images/CharacterText/Text55.png");
+        }
+        
+        if(id == 56)
+        {
+            setImage("images/CharacterText/Text56.png");
+        }
+        
+        if(id == 57)
+        {
+            setImage("images/CharacterText/Text57.png");
         }
     }
     

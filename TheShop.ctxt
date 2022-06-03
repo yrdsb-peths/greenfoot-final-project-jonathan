@@ -1,6 +1,8 @@
 #BlueJ class context
 comment0.target=TheShop
 comment0.text=\r\n\ The\ Merchant's\ shop\r\n\ \r\n\ @author\ Jonathan\ Zhao\r\n\ @version\ June\ 2\r\n
-comment1.params=returnWorld
-comment1.target=TheShop(greenfoot.World)
-numComments=2
+comment1.params=
+comment1.target=void\ resetStatic()
+comment2.params=returnWorld
+comment2.target=TheShop(greenfoot.World)
+numComments=3

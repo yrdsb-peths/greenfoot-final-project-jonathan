@@ -51,7 +51,7 @@ public class TutorialNPC2Fighting extends Actor
     int imageIndex3 = 0;
     public void animateNPCFight()
     {
-        if(FightButtonTutorial.punch)
+        if(FightButtonTutorial.punch || UsePotionYesButton.usedPotion)
         {
             setImage("images/NPCs/FriendNPC2Fight/NPCDamage000.png");
             if(animationTimer.millisElapsed() < 270)
@@ -63,6 +63,7 @@ public class TutorialNPC2Fighting extends Actor
             setImage(gettingHit[imageIndex2]);
             imageIndex2 = (imageIndex2 + 1) % gettingHit.length; 
             FightButtonTutorial.punch = false;
+            UsePotionYesButton.usedPotion = false;
             FightButtonTutorial.enemyTurn = true;
             FightButtonTutorial.enemyTurnAnimations = true;
         }
