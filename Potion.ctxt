@@ -1,0 +1,8 @@
+#BlueJ class context
+comment0.target=Potion
+comment0.text=\r\n\ A\ potion\ that\ heals\ 45\ HP\ for\ the\ main\ character\r\n\ \r\n\ @author\ Jonathan\ Zhao\r\n\ @version\ June\ 2\r\n
+comment1.params=
+comment1.target=void\ resetStatic()
+comment2.params=
+comment2.target=void\ act()
+numComments=3

@@ -9,22 +9,25 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 public class World2Ver2 extends World
 {
 
-    
+    Label mainCharacterHPLabel = new Label("HP: " + MainCharacterFighting.mainCharacterHP, 50);
     public World2Ver2()
     {    
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
         super(1200, 800, 1); 
         
         MainCharacter mainCharacter = new MainCharacter();
-        addObject(mainCharacter, 800, 70);
+        addObject(mainCharacter, 800, 100);
+        
+        // Create main character's hp
+        addObject(mainCharacterHPLabel, 100, 60);
         
         // Create a friendly NPC
-        TutorialNPC2 friendNPC = new TutorialNPC2();
+        TutorialNPC2Ver2 friendNPC = new TutorialNPC2Ver2();
         addObject(friendNPC, 800, 50);
         
         // Add wallet
         Wallet wallet = new Wallet();
         Wallet.walletLabel.setValue("$" + Wallet.wallet);
-        addObject(Wallet.walletLabel, 40, 20);
+        addObject(Wallet.walletLabel, 100, 20);
     }
 }

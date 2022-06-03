@@ -1,5 +1,5 @@
 #BlueJ class context
-comment0.target=Road
+comment0.target=RoadToWorld2
 comment0.text=\r\n\ A\ portal\ that\ takes\ you\ to\ the\ next\ map\r\n\ \r\n\ @author\ Jonathan\ Zhao\ \r\n\ @May\ 31\r\n
 comment1.params=
 comment1.target=void\ act()

@@ -12,7 +12,7 @@ public class TutorialNPC2 extends Actor
     public void act()
     {
         setImage("images/NPCs/FriendNPC2.png");
-        talk();
+        talk();    
     }
     
     Text text8 = new Text(8);
@@ -41,6 +41,7 @@ public class TutorialNPC2 extends Actor
         {
             World2 world = (World2) getWorld();
             world.addObject(text11, 600, 650);
+
         }
         if(Greenfoot.mouseClicked(text11))
         {

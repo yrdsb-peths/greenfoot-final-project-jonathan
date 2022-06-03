@@ -10,9 +10,28 @@ public class MainCharacterFighting extends Actor
 {
     // HP
     public static int mainCharacterHP = 100;
+    public static void resetStatic()
+    {
+        mainCharacterHP = 100;
+    }
+    
+    SimpleTimer animationTimer = new SimpleTimer();
+    GreenfootImage[] fighting = new GreenfootImage[3];
     
     public void act()
     {
-        
+        animatePunch();
+    }
+
+    public void animatePunch()
+    {
+        if(FightButton.punch || FightButtonTutorial.punch)
+        {
+            setImage("MainFacing001.png");  
+        }
+        else
+        {
+            setImage("MainFacing000.png");
+        }
     }
 }

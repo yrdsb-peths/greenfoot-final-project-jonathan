@@ -109,6 +109,13 @@ public class MainCharacter extends Actor
             setImage("images/WalkCycle/MainIdle.png");
             
         }
+    
+
+        if(Greenfoot.isKeyDown("b"))
+        {
+            Greenfoot.setWorld(new ItemBag(getWorld()));
+        }
+
     }
     
 

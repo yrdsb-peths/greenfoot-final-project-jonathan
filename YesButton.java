@@ -19,7 +19,7 @@ public class YesButton extends Actor
         {
             setImage("images/CharacterText/YesButton2.png");
         }
-        else
+        if(Greenfoot.mouseMoved(null) && !Greenfoot.mouseMoved(this))
         {
             setImage("images/CharacterText/YesButton1.png");
         }
@@ -50,12 +50,12 @@ public class YesButton extends Actor
         {
             FirstWorld world = (FirstWorld) getWorld();
             world.addObject(text7, 600, 650);
-            Road road1 = new Road();
+            RoadToWorld2 road1 = new RoadToWorld2();
             world.addObject(road1, 800, 0);
             Wallet wallet = new Wallet();
             Wallet.wallet += 5;
             Wallet.walletLabel.setValue("$" + Wallet.wallet);
-            world.addObject(Wallet.walletLabel, 40, 20);
+            world.addObject(Wallet.walletLabel, 100, 20);
         }
         
     }

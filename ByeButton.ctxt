@@ -1,0 +1,6 @@
+#BlueJ class context
+comment0.target=ByeButton
+comment0.text=\r\n\ Says\ goodbye\ to\ the\ merchant\ instead\ of\ buying\ anything\r\n\ \r\n\ @author\ Jonathan\ Zhao\r\n\ @version\ June\ 2\r\n
+comment1.params=
+comment1.target=void\ act()
+numComments=2

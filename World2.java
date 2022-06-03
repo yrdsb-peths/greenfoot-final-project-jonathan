@@ -1,10 +1,10 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class World2 here.
+ * Second world
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @author Jonathan Zhao
+ * @version May 31
  */
 public class World2 extends World
 {
@@ -28,6 +28,6 @@ public class World2 extends World
         // Add wallet
         Wallet wallet = new Wallet();
         Wallet.walletLabel.setValue("$" + Wallet.wallet);
-        addObject(Wallet.walletLabel, 40, 20);
+        addObject(Wallet.walletLabel, 100, 20);
     }
 }

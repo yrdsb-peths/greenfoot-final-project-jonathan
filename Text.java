@@ -83,6 +83,141 @@ public class Text extends Actor
         {
             setImage("images/CharacterText/Text13.png");
         }
+        
+        if(id == 14)
+        {
+            setImage("images/CharacterText/Text14.png");
+        }
+        
+        if(id == 15)
+        {
+            setImage("images/CharacterText/Text15.png");
+        }
+        
+        if(id == 16)
+        {
+            setImage("images/CharacterText/Text16.png");
+        }
+        
+        if(id == 17)
+        {
+            setImage("images/CharacterText/Text17.png");
+        }
+        
+        if(id == 18)
+        {
+            setImage("images/CharacterText/Text18.png");
+        }
+        
+        if(id == 19)
+        {
+            setImage("images/CharacterText/Text19.png");
+        }
+        
+        if(id == 20)
+        {
+            setImage("images/CharacterText/Text20.png");
+        }
+        
+        if(id == 21)
+        {
+            setImage("images/CharacterText/Text21.png");
+        }
+        
+        if(id == 22)
+        {
+            setImage("images/CharacterText/Text22.png");
+        }
+        
+        if(id == 23)
+        {
+            setImage("images/CharacterText/Text23.png");
+        }
+        
+        if(id == 24)
+        {
+            setImage("images/CharacterText/Text24.png");
+        }
+        
+        if(id == 25)
+        {
+            setImage("images/CharacterText/Text25.png");
+        }
+        
+        if(id == 26)
+        {
+            setImage("images/CharacterText/Text26.png");
+        }
+        
+        if(id == 27)
+        {
+            setImage("images/CharacterText/Text27.png");
+        }
+        
+        if(id == 28)
+        {
+            setImage("images/CharacterText/Text28.png");
+        }
+        
+        if(id == 29)
+        {
+            setImage("images/CharacterText/Text29.png");
+        }
+        
+        if(id == 30)
+        {
+            setImage("images/CharacterText/Text30.png");
+        }
+        
+        if(id == 31)
+        {
+            setImage("images/CharacterText/Text31.png");
+        }
+        
+        if(id == 32)
+        {
+            setImage("images/CharacterText/Text32.png");
+        }
+        
+        if(id == 33)
+        {
+            setImage("images/CharacterText/Text33.png");
+        }
+        
+        if(id == 34)
+        {
+            setImage("images/CharacterText/Text34.png");
+        }
+        
+        if(id == 35)
+        {
+            setImage("images/CharacterText/Text35.png");
+        }
+        
+        if(id == 36)
+        {
+            setImage("images/CharacterText/Text36.png");
+        }
+        
+        if(id == 37)
+        {
+            setImage("images/CharacterText/Text37.png");
+        }
+        
+        if(id == 38)
+        {
+            setImage("images/ItemBag.png");
+        }
+        
+        if(id == 39)
+        {
+            setImage("images/CharacterText/Text39.png");
+        }
+        
+        if(id == 40)
+        {
+            setImage("images/TheShop.png");
+        }
     }
     
     public void act()

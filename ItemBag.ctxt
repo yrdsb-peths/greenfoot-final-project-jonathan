@@ -1,0 +1,8 @@
+#BlueJ class context
+comment0.target=ItemBag
+comment0.text=\r\n\ A\ world\ that\ is\ the\ item\ bag.\ Holds\ potions\ and\ Holy\ Relics\r\n\ \r\n\ @author\ Jonathan\ Zhao\ \r\n\ @version\ June\ 2\r\n
+comment1.params=returnWorld
+comment1.target=ItemBag(greenfoot.World)
+comment2.params=
+comment2.target=void\ act()
+numComments=3

@@ -91,4 +91,10 @@ public class Label extends Actor
     {
         setImage(new GreenfootImage(value, fontSize, fillColor, transparent, lineColor));
     }
+    
+    public static void update(int newHP)
+    {
+        Label labelHP = new Label("HP: " + newHP, 50);
+        
+    }
 }

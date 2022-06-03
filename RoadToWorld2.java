@@ -6,10 +6,8 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  * @author Jonathan Zhao 
  * @May 31
  */
-public class Road extends Actor
-{
-    public GreenfootImage road1;
-    
+public class RoadToWorld2 extends Actor
+{ 
     public void act()
     {
         if(isTouching(MainCharacter.class))

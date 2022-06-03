@@ -1,0 +1,6 @@
+#BlueJ class context
+comment0.target=FightButtonTutorial
+comment0.text=\r\n\ The\ main\ character\ throws\ a\ punch\ in\ combat\ against\ the\ tutorial\ character\r\n\ \r\n\ @author\ Jonathan\ Zhao\r\n\ @version\ June\ 2\r\n
+comment1.params=
+comment1.target=void\ act()
+numComments=2

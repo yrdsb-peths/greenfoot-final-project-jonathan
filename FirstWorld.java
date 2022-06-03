@@ -8,16 +8,13 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class FirstWorld extends World
 {   
-    
-    /**
-     * Constructor for objects of class MyWorld.
-     * 
-     */
-    
+    Label instruction1 = new Label("Press  <w>  <a>  <s>  <d>  to move", 50);
     public FirstWorld()
     {    
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
         super(1200, 800, 1); 
+        
+        addObject(instruction1, 400, 100);
         
         MainCharacter mainCharacter = new MainCharacter();
         addObject(mainCharacter, 400, 400);
@@ -27,8 +24,13 @@ public class FirstWorld extends World
         TutorialNPC friendNPC = new TutorialNPC();
         addObject(friendNPC, 800, 400);
         
+        // Reset all variables
         Wallet.resetStatic();
+        TutorialNPC2Fighting.resetStatic();
+        MainCharacterFighting.resetStatic();
+        Potion.resetStatic();
     }
+    
     
     
 
