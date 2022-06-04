@@ -2,7 +2,5 @@
 comment0.target=ShopGoblet
 comment0.text=\r\n\ The\ Goblet\ of\ Yabba\ in\ the\ shop\r\n\ \r\n\ @Jonathan\ Zhao\ \r\n\ @version\ June\ 3\r\n
 comment1.params=
-comment1.target=void\ resetStatic()
-comment2.params=
-comment2.target=void\ act()
-numComments=3
+comment1.target=void\ act()
+numComments=2

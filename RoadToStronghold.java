@@ -12,7 +12,7 @@ public class RoadToStronghold extends Actor
     {
         if(isTouching(MainCharacter.class))
         {
-            Greenfoot.setWorld(new Stronghold());
+            Greenfoot.setWorld(new Stronghold(getWorld()));
         }
     }
 }

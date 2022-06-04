@@ -12,7 +12,7 @@ public class RoadToTemple extends Actor
     {
         if(isTouching(MainCharacter.class))
         {
-            Greenfoot.setWorld(new Temple());
+            Greenfoot.setWorld(new Temple(getWorld()));
         }
     }
 }

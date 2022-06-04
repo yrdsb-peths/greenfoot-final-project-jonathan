@@ -1,8 +1,8 @@
 #BlueJ class context
 comment0.target=Temple
 comment0.text=\r\n\ The\ temple\r\n\ \r\n\ @author\ Jonathan\ Zhao\r\n\ @version\ June\ 3\r\n
-comment1.params=
-comment1.target=Temple()
+comment1.params=returnWorld
+comment1.target=Temple(greenfoot.World)
 comment2.params=
 comment2.target=void\ act()
 numComments=3

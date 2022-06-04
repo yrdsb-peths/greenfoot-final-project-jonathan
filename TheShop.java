@@ -10,10 +10,10 @@ public class TheShop extends World
 {
     World returnWorld;
     
-    public static boolean lastHolyRelic = false;
+    public static int relicsBought = 0;
     public static void resetStatic()
     {
-        lastHolyRelic = false;
+        relicsBought = 0;
     }
     
     public TheShop(World returnWorld)
@@ -45,23 +45,31 @@ public class TheShop extends World
         {
             ShopGoblet shopGoblet = new ShopGoblet();
             addObject(shopGoblet, 500, 450);
+            addObject(gobletPriceTag, 500, 450);
         }
         
         if(!SpearOfKulbally.hasSpear)
         {
             ShopSpear shopSpear = new ShopSpear();
             addObject(shopSpear, 750, 500);
+            addObject(spearPriceTag, 750, 450);
         }
         
         if(!TomeOfRebaer.hasTome)
         {
             ShopTome shopTome = new ShopTome();
             addObject(shopTome, 1025, 500);
+            addObject(tomePriceTag, 1025, 450);
         }
         
-        addObject(gobletPriceTag, 500, 450);
-        addObject(spearPriceTag, 750, 450);
-        addObject(tomePriceTag, 1025, 450);
+        
+        
+        
+    }
+    
+    public void act()
+    {
+        Wallet.walletLabel.setValue("$" + Wallet.wallet);
     }
 
 }

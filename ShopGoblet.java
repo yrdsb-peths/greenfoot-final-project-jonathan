@@ -8,11 +8,6 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class ShopGoblet extends Actor
 {
-    public static boolean firstHolyRelic = true;
-    public static void resetStatic()
-    {
-        firstHolyRelic = true;
-    }
     
     public void act()
     {

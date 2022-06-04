@@ -31,9 +31,6 @@ public class FirstWorld extends World
         Potion.resetStatic();
         TheShop.resetStatic();
         GobletOfYabba.resetStatic();
-        ShopGoblet.resetStatic();
-        ShopSpear.resetStatic();
-        ShopTome.resetStatic();
         SpearOfKulbally.resetStatic();
         TomeOfRebaer.resetStatic();
     }

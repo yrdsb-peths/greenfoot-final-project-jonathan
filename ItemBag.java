@@ -45,7 +45,7 @@ public class ItemBag extends World
     
     public void act()
     {
-        numberOfPotionsLabel.setValue("x" + Potion.numberPotions, 70);
+        numberOfPotionsLabel.setValue("x" + Potion.numberPotions);
         if(Greenfoot.isKeyDown("escape"))
         {
             Greenfoot.setWorld(returnWorld);

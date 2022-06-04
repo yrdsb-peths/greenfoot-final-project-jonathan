@@ -8,11 +8,17 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class RoadTempleToWorld2Ver4 extends Actor
 {
+    World returnWorld;
     public void act()
     {
         if(isTouching(MainCharacter.class))
         {
-            Greenfoot.setWorld(new World2Ver4FromTemple(getWorld()));
+            Greenfoot.setWorld(returnWorld);
         }
+    }
+    
+    public RoadTempleToWorld2Ver4(World returnWorld)
+    {
+        this.returnWorld = returnWorld;
     }
 }

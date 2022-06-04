@@ -8,12 +8,6 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class ShopSpear extends Actor
 { 
-    public static boolean firstHolyRelic = true;
-        public static void resetStatic()
-    {
-        firstHolyRelic = true;
-    }
-    
     public void act()
     {
         setImage("images/TheSpearOfKulbally.png");

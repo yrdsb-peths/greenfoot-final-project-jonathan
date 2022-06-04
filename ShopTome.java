@@ -8,12 +8,6 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class ShopTome extends Actor
 {
-    public static boolean firstHolyRelic = true;
-    public static void resetStatic()
-    {
-        firstHolyRelic = true;
-    }
-    
     public void act()
     {
         setImage("images/TheTomeOfRebaer.png");
