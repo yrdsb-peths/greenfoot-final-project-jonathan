@@ -8,10 +8,12 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class FightButton extends Actor
 {
-    Label tutorialHPLabel = new Label(TutorialNPC2Fighting.tutorialHP, 50);
-    World2Battle world = (World2Battle) getWorld();
+    Label redHPLabel = new Label(TheRedsFighting.redHP, 50);
+    StrongholdBattle world = (StrongholdBattle) getWorld();
     
     public static boolean punch = false;
+    public static boolean enemyTurn = false;
+    public static boolean enemyTurnAnimations = false;
     
     public void act()
     {
@@ -25,7 +27,7 @@ public class FightButton extends Actor
         }
         if(Greenfoot.mouseClicked(this))
         {
-            //Enemy.enemyHP -= Greenfoot.getRandomNumber(21);
+            TheRedsFighting.redHP -= Greenfoot.getRandomNumber(21);
             punch = true;
         }
     }

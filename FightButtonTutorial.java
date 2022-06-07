@@ -11,9 +11,9 @@ public class FightButtonTutorial extends Actor
     Label tutorialHPLabel = new Label(TutorialNPC2Fighting.tutorialHP, 50);
     World2Battle world = (World2Battle) getWorld();
     
-    public static boolean punch = false;
-    public static boolean enemyTurn = false;
-    public static boolean enemyTurnAnimations = false;
+    public static boolean punchTutorial = false;
+    public static boolean enemyTurnTutorial = false;
+    public static boolean enemyTurnAnimationsTutorial = false;
     
     public void act()
     {
@@ -28,7 +28,7 @@ public class FightButtonTutorial extends Actor
         if(Greenfoot.mouseClicked(this))
         {
             TutorialNPC2Fighting.tutorialHP -= Greenfoot.getRandomNumber(21);
-            punch = true;
+            punchTutorial = true;
         }
     }
 }

@@ -8,6 +8,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class YesButtonHeal extends Actor
 {
+    public static boolean removeText = false;
     public void act()
     {
         if(Greenfoot.mouseMoved(this))
@@ -20,8 +21,20 @@ public class YesButtonHeal extends Actor
         }
         if(Greenfoot.mouseClicked(this))
         {
+            World2Ver4 world = (World2Ver4) getWorld();
             MainCharacterFighting.mainCharacterHP = 100;
-            Greenfoot.setWorld(new World2Ver4(getWorld()));
+            removeText = true;
+            
+            
+            
+            
+            
+            
+        }
+        if(removeText)
+        {
+            World2Ver4 world = (World2Ver4) getWorld();
+            world.removeObject(this);
         }
     }
 }

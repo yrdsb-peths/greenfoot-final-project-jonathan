@@ -25,7 +25,7 @@ public class MainCharacterFighting extends Actor
 
     public void animatePunch()
     {
-        if(FightButton.punch || FightButtonTutorial.punch)
+        if(FightButton.punch || FightButtonTutorial.punchTutorial)
         {
             setImage("MainFacing001.png");  
         }

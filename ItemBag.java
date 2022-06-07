@@ -9,6 +9,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 public class ItemBag extends World
 {   
     Label numberOfPotionsLabel = new Label("x" + Potion.numberPotions, 70);
+    Label mainCharacterHPLabel = new Label("HP: " + MainCharacterFighting.mainCharacterHP, 50);
     World returnWorld;
     
     
@@ -22,6 +23,9 @@ public class ItemBag extends World
         addObject(itemBag, 600, 100);
         addObject(potion, 200, 450);
         addObject(numberOfPotionsLabel, 200, 450);
+        
+        // Create main character's hp
+        addObject(mainCharacterHPLabel, 100, 60);
         
         if(GobletOfYabba.hasGoblet)
         {
@@ -46,6 +50,7 @@ public class ItemBag extends World
     public void act()
     {
         numberOfPotionsLabel.setValue("x" + Potion.numberPotions);
+        mainCharacterHPLabel.setValue("HP: " + MainCharacterFighting.mainCharacterHP);
         if(Greenfoot.isKeyDown("escape"))
         {
             Greenfoot.setWorld(returnWorld);

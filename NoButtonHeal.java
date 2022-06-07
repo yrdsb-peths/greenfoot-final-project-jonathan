@@ -20,8 +20,11 @@ public class NoButtonHeal extends Actor
         }
         if(Greenfoot.mouseClicked(this))
         {
-            Greenfoot.setWorld(new World2Ver4(getWorld()));
+            World2Ver4 world = (World2Ver4) getWorld();
+            world.removeObject(this);
+            YesButtonHeal.removeText = true;
         }
+        
     }
     
 }

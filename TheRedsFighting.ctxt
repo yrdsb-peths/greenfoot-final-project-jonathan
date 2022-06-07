@@ -1,0 +1,12 @@
+#BlueJ class context
+comment0.target=TheRedsFighting
+comment0.text=\r\n\ The\ main\ enemies\ of\ the\ game\r\n\ \r\n\ @author\ Jonathan\ Zhao\ \r\n\ @version\ June\ 6\r\n
+comment1.params=
+comment1.target=void\ resetStatic()
+comment2.params=
+comment2.target=TheRedsFighting()
+comment3.params=
+comment3.target=void\ animateFight()
+comment4.params=
+comment4.target=void\ act()
+numComments=5

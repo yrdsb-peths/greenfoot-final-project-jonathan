@@ -25,18 +25,21 @@ public class TutorialNPC2Fighting extends Actor
     // Animation
     public TutorialNPC2Fighting()
     {
+        // Animation for getting hit
         for(int i = 0; i < 3; i++)
         {
             gettingHit[i] = new GreenfootImage("images/NPCs/FriendNPC2Fight/NPCDamage00" + i + ".png");
         }
         setImage(gettingHit[0]);
         
+        // Animation for attacking
         for(int i = 0; i < 2; i++)
         {
             attack[i] = new GreenfootImage("images/NPCs/FriendNPC2Fight/NPCAttack00" + i + ".png");
         }
         setImage(attack[0]);
         
+        // Animation for idle
         for(int i = 0; i < 10; i++)
         {
             fighting[i] = new GreenfootImage("images/NPCs/FriendNPC2Fight/NPCFight00" + i + ".png");
@@ -51,7 +54,7 @@ public class TutorialNPC2Fighting extends Actor
     int imageIndex3 = 0;
     public void animateNPCFight()
     {
-        if(FightButtonTutorial.punch || UsePotionYesButton.usedPotion)
+        if(FightButtonTutorial.punchTutorial || UsePotionYesButton.usedPotion)
         {
             setImage("images/NPCs/FriendNPC2Fight/NPCDamage000.png");
             if(animationTimer.millisElapsed() < 270)
@@ -62,12 +65,12 @@ public class TutorialNPC2Fighting extends Actor
             
             setImage(gettingHit[imageIndex2]);
             imageIndex2 = (imageIndex2 + 1) % gettingHit.length; 
-            FightButtonTutorial.punch = false;
+            FightButtonTutorial.punchTutorial = false;
             UsePotionYesButton.usedPotion = false;
-            FightButtonTutorial.enemyTurn = true;
-            FightButtonTutorial.enemyTurnAnimations = true;
+            FightButtonTutorial.enemyTurnTutorial = true;
+            FightButtonTutorial.enemyTurnAnimationsTutorial = true;
         }
-        else if(FightButtonTutorial.enemyTurnAnimations)
+        else if(FightButtonTutorial.enemyTurnAnimationsTutorial)
         {
             setImage("images/NPCs/FriendNPC2Fight/NPCAttack000.png");
             if(animationTimer.millisElapsed() < 270)
@@ -84,7 +87,7 @@ public class TutorialNPC2Fighting extends Actor
             setImage(attack[imageIndex3]);
             imageIndex3 = (imageIndex3 + 1) % attack.length;
             
-            FightButtonTutorial.enemyTurnAnimations = false;
+            FightButtonTutorial.enemyTurnAnimationsTutorial = false;
         }   
         
         else
@@ -106,15 +109,16 @@ public class TutorialNPC2Fighting extends Actor
     public void act()
     {
         animateNPCFight();
-        if(FightButtonTutorial.enemyTurn)
+        if(FightButtonTutorial.enemyTurnTutorial)
         {
             MainCharacterFighting.mainCharacterHP -= Greenfoot.getRandomNumber(10);
-            FightButtonTutorial.enemyTurn = false;
+            FightButtonTutorial.enemyTurnTutorial = false;
         }
         if(tutorialHP <= 0)
         {
             Wallet.wallet += 10;
             Greenfoot.setWorld(new World2Ver2());
+            FightButtonTutorial.punchTutorial = false;
         }
     }
     

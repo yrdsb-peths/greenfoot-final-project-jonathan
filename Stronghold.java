@@ -10,6 +10,7 @@ public class Stronghold extends World
 {
     
     Label mainCharacterHPLabel = new Label("HP: " + MainCharacterFighting.mainCharacterHP, 50);
+    
     public Stronghold(World returnWorld)
     {    
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
@@ -29,6 +30,11 @@ public class Stronghold extends World
         Wallet wallet = new Wallet();
         Wallet.walletLabel.setValue("$" + Wallet.wallet);
         addObject(Wallet.walletLabel, 100, 20);
+        
+        // Create enemy 
+        TheReds theReds = new TheReds();
+        addObject(theReds, 400, 400);
+        theReds.setRotation(270);
     }
     
     public void act()

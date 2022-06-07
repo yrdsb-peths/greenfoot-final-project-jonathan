@@ -30,12 +30,12 @@ public class BuyTomeButton extends Actor
         }
         if(Greenfoot.mouseClicked(this))
         {
-            bought = true;
             if(Wallet.wallet - 100 > 0) // sufficient currency
             {
                 TomeOfRebaer.hasTome = true;
                 Wallet.wallet -= 100;
                 TheShop.relicsBought++;
+                bought = true;
             }
             else
             {

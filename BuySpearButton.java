@@ -30,12 +30,12 @@ public class BuySpearButton extends Actor
         }
         if(Greenfoot.mouseClicked(this))
         {
-            bought = true;
             if(Wallet.wallet - 100 > 0) // sufficient currency
             {
                 SpearOfKulbally.hasSpear = true;
                 Wallet.wallet -= 100;
                 TheShop.relicsBought++;
+                bought = true;
             }
             else
             {

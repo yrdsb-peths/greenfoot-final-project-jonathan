@@ -37,8 +37,15 @@ public class Potion extends Actor
         if(numberPotions > 0)
         {
             numberPotions -= 1;
+            // Max HP is capped at 100
+            if(MainCharacterFighting.mainCharacterHP + 40 > 100)
+            {
+                MainCharacterFighting.mainCharacterHP = 100;
+            }
             MainCharacterFighting.mainCharacterHP += 40;
-
+            
+            
         }
+        
     }
 }

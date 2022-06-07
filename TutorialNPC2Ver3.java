@@ -9,6 +9,8 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class TutorialNPC2Ver3 extends Actor
 {
+    public boolean text1Spawned = false;
+    
     public void act()
     {
         setImage("images/NPCs/FriendNPC2.png");
@@ -18,7 +20,7 @@ public class TutorialNPC2Ver3 extends Actor
     Text text19 = new Text(19);
     public void heal()
     {
-        if(isTouching(MainCharacter.class) && Greenfoot.isKeyDown("f"))
+        if(isTouching(MainCharacter.class) && Greenfoot.isKeyDown("f") && !text1Spawned)
             {
                 World2Ver4 world = (World2Ver4) getWorld();
                 world.addObject(text19, 600, 650);
@@ -26,6 +28,12 @@ public class TutorialNPC2Ver3 extends Actor
                 NoButtonHeal noButtonHeal = new NoButtonHeal();
                 world.addObject(yesButtonHeal, 760, 700);
                 world.addObject(noButtonHeal, 890, 700);
+                text1Spawned = true;
+                
+                if(YesButtonHeal.removeText == true)
+                {
+                    world.removeObject(text19);
+                }
             }    
     }
 }
