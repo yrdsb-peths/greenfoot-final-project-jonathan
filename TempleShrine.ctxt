@@ -1,0 +1,6 @@
+#BlueJ class context
+comment0.target=TempleShrine
+comment0.text=\r\n\ The\ shrine\ of\ the\ temples\r\n\ Holy\ Relics\ must\ be\ placed\ here\ for\ something\ to\ happen\r\n\ \r\n\ @author\ Jonathan\ Zhao\r\n\ @version\ June\ 7\r\n
+comment1.params=
+comment1.target=void\ act()
+numComments=2

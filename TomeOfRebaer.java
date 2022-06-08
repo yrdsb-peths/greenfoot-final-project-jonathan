@@ -9,9 +9,11 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 public class TomeOfRebaer extends Actor
 {
     public static boolean hasTome = false;
+    public static boolean placedTome = false;
     public static void resetStatic()
     {
         hasTome = false;
+        placedTome = false;
     }
     
     public void act()

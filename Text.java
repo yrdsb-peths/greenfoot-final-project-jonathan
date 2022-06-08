@@ -311,6 +311,16 @@ public class Text extends Actor
         {
             setImage("images/CharacterText/Text60.png");
         }
+        
+        if(id == 61)
+        {
+            setImage("images/CharacterText/WannaBuyYabba.png");
+        }
+        
+        if(id == 62)
+        {
+            setImage("images/CharacterText/NotUsable.png");
+        }
     }
     
     public void act()

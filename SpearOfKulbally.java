@@ -9,9 +9,11 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 public class SpearOfKulbally extends Actor
 {
     public static boolean hasSpear = false;
+    public static boolean placedSpear = false;
     public static void resetStatic()
     {
         hasSpear = false;
+        placedSpear = false;
     }
     public void act()
     {

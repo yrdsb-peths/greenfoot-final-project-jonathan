@@ -27,19 +27,19 @@ public class ItemBag extends World
         // Create main character's hp
         addObject(mainCharacterHPLabel, 100, 60);
         
-        if(GobletOfYabba.hasGoblet)
+        if(GobletOfYabba.hasGoblet && !GobletOfYabba.placedGoblet)
         {
             GobletOfYabba gobletOfYabba = new GobletOfYabba();
             addObject(gobletOfYabba, 500, 450);
         }
         
-        if(SpearOfKulbally.hasSpear)
+        if(SpearOfKulbally.hasSpear && !SpearOfKulbally.placedSpear)
         {
             SpearOfKulbally spearOfKulbally = new SpearOfKulbally();
             addObject(spearOfKulbally, 750, 500);
         }
         
-        if(TomeOfRebaer.hasTome)
+        if(TomeOfRebaer.hasTome && !TomeOfRebaer.placedTome)
         {
             TomeOfRebaer tomeOfRebaer = new TomeOfRebaer();
             addObject(tomeOfRebaer, 1025, 500);
