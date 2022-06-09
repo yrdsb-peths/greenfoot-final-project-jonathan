@@ -13,7 +13,7 @@ public class TempleShrineTome extends Actor
     public void act()
     {
         Temple world = (Temple) getWorld();
-        if(isTouching(MainCharacter.class) && !textSpawned)
+        if(isTouching(MainCharacter.class) && !textSpawned && TomeOfRebaer.hasTome)
         {
             Text text64 = new Text(64);
             world.addObject(text64, 600, 650);
@@ -25,7 +25,7 @@ public class TempleShrineTome extends Actor
         }
         if(TomeOfRebaer.placedTome)
         {
-            setImage("images/ShrineWithTome.png"); // shrine with tome on it
+            setImage("images/ShrineWithRebaer.png"); // shrine with tome on it
         }
         else
         {

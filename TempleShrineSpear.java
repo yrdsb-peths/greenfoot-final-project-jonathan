@@ -13,7 +13,7 @@ public class TempleShrineSpear extends Actor
     public void act()
     {
         Temple world = (Temple) getWorld();
-        if(isTouching(MainCharacter.class) && !textSpawned)
+        if(isTouching(MainCharacter.class) && !textSpawned && SpearOfKulbally.hasSpear)
         {
             Text text63 = new Text(63);
             world.addObject(text63, 600, 650);
@@ -25,7 +25,7 @@ public class TempleShrineSpear extends Actor
         }
         if(SpearOfKulbally.placedSpear)
         {
-            setImage("images/ShrineWithSpear.png"); // shrine with spear on it
+            setImage("images/ShrineWithKulbally.png"); // shrine with spear on it
         }
         else
         {

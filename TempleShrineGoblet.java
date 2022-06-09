@@ -10,12 +10,13 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 public class TempleShrineGoblet extends Actor
 {
     public boolean textSpawned = false;
+    public boolean alreadySet = false;
     public void act()
     {
         Temple world = (Temple) getWorld();
         
         
-        if(isTouching(MainCharacter.class) && !textSpawned)
+        if(isTouching(MainCharacter.class) && !textSpawned && GobletOfYabba.hasGoblet)
         {
             Text text61 = new Text(61);
             world.addObject(text61, 600, 650);
