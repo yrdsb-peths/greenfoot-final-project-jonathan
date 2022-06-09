@@ -1,8 +1,0 @@
-#BlueJ class context
-comment0.target=UseYabbaButton
-comment0.text=\r\n\ A\ button\ that\ asks\ the\ player\ if\ they\ want\ to\ use\ the\ Goblet\ of\ Yabba\r\n\ Only\ works\ when\ player\ stands\ on\ shrine\ to\ place\ the\ Goblet\r\n\ \r\n\ @author\ Jonathan\ Zhao\ \ \ \ \r\n\ @version\ June\ 7\r\n
-comment1.params=returnWorld
-comment1.target=UseYabbaButton(greenfoot.World)
-comment2.params=
-comment2.target=void\ act()
-numComments=3

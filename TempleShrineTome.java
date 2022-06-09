@@ -9,20 +9,23 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class TempleShrineTome extends Actor
 {
-    public static boolean touchingShrine = false;
+    public boolean textSpawned = false;
     public void act()
     {
-        if(isTouching(MainCharacter.class))
+        Temple world = (Temple) getWorld();
+        if(isTouching(MainCharacter.class) && !textSpawned)
         {
-            touchingShrine = true;
-        }
-        else
-        {
-            touchingShrine = false;
+            Text text64 = new Text(64);
+            world.addObject(text64, 600, 650);
+            UseTomeButton useButton = new UseTomeButton();
+            world.addObject(useButton, 400, 700);
+            NoButtonRelicUse noButton = new NoButtonRelicUse();
+            world.addObject(noButton, 890, 700);
+            textSpawned = true;
         }
         if(TomeOfRebaer.placedTome)
         {
-            setImage("images/ShrineWithRebaer.png"); // shrine with tome
+            setImage("images/ShrineWithTome.png"); // shrine with tome on it
         }
         else
         {

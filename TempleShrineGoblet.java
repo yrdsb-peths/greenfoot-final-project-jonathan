@@ -9,16 +9,21 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class TempleShrineGoblet extends Actor
 {
-    public static boolean touchingShrine = false;
+    public boolean textSpawned = false;
     public void act()
     {
-        if(isTouching(MainCharacter.class))
+        Temple world = (Temple) getWorld();
+        
+        
+        if(isTouching(MainCharacter.class) && !textSpawned)
         {
-            touchingShrine = true;
-        }
-        else
-        {
-            touchingShrine = false;
+            Text text61 = new Text(61);
+            world.addObject(text61, 600, 650);
+            UseGobletButton useButton = new UseGobletButton();
+            world.addObject(useButton, 400, 700);
+            NoButtonRelicUse noButton = new NoButtonRelicUse();
+            world.addObject(noButton, 890, 700);
+            textSpawned = true;
         }
         if(GobletOfYabba.placedGoblet)
         {

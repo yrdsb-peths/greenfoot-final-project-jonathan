@@ -1,0 +1,6 @@
+#BlueJ class context
+comment0.target=NoButtonRelicUse
+comment0.text=\r\n\ No\ button\ for\ the\ option\ of\ placing\ the\ relics\ on\ the\ shrines\r\n\ \r\n\ @author\ Jonathan\ Zhao\r\n\ @version\ June\ 9\r\n
+comment1.params=
+comment1.target=void\ act()
+numComments=2

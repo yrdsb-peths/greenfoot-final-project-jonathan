@@ -20,14 +20,5 @@ public class TomeOfRebaer extends Actor
     {
         setImage("images/TheTomeOfRebaer.png");
         ItemBag world = (ItemBag) getWorld();
-        if(Greenfoot.mouseClicked(this))
-        {
-            Text text64 = new Text(64); 
-            world.addObject(text64, 600, 400);
-            UseRebaerButton useButton = new UseRebaerButton(getWorld());
-            world.addObject(useButton, 400, 450);
-            UseItemNoButton noButton = new UseItemNoButton();
-            world.addObject(noButton, 800, 450);
-        }
     }
 }

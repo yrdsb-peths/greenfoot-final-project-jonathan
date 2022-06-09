@@ -1,0 +1,6 @@
+#BlueJ class context
+comment0.target=UseTomeButton
+comment0.text=\r\n\ Use\ button\ that\ places\ the\ Goblet\ of\ Yabba\ on\ the\ shrine.\r\n\ \r\n\ @author\ Jonathan\ Zhao\r\n\ @version\ June\ 9\r\n
+comment1.params=
+comment1.target=void\ act()
+numComments=2
