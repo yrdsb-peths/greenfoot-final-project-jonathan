@@ -20,9 +20,9 @@ public class GobletOfYabba extends Actor
     public void act()
     {
         setImage("images/TheGobletOfYabba.png");
+        ItemBag world = (ItemBag) getWorld();
         if(Greenfoot.mouseClicked(this))
         {
-            ItemBag world = (ItemBag) getWorld();
             Text text61 = new Text(61); 
             world.addObject(text61, 600, 400);
             UseYabbaButton useButton = new UseYabbaButton(getWorld());

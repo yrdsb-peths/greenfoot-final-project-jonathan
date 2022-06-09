@@ -314,12 +314,22 @@ public class Text extends Actor
         
         if(id == 61)
         {
-            setImage("images/CharacterText/WannaBuyYabba.png");
+            setImage("images/CharacterText/WannaUseYabba.png");
         }
         
         if(id == 62)
         {
             setImage("images/CharacterText/NotUsable.png");
+        }
+        
+        if(id == 63)
+        {
+            setImage("images/CharacterText/WannaUseKulbally.png");
+        }
+        
+        if(id == 64)
+        {
+            setImage("images/CharacterText/WannaUseRebaer.png");
         }
     }
     

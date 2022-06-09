@@ -42,8 +42,10 @@ public class Potion extends Actor
             {
                 MainCharacterFighting.mainCharacterHP = 100;
             }
-            MainCharacterFighting.mainCharacterHP += 40;
-            
+            else
+            {
+                 MainCharacterFighting.mainCharacterHP += 40;
+            }
             
         }
         

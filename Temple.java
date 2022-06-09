@@ -28,6 +28,14 @@ public class Temple extends World
         Wallet wallet = new Wallet();
         Wallet.walletLabel.setValue("$" + Wallet.wallet);
         addObject(Wallet.walletLabel, 100, 20);
+        
+        // Add shrines
+        TempleShrine shrine1 = new TempleShrine();
+        TempleShrine shrine2 = new TempleShrine();
+        TempleShrine shrine3 = new TempleShrine();
+        addObject(shrine1, 300, 400);
+        addObject(shrine2, 600, 200);
+        addObject(shrine3, 900, 400);
     }
     
     public void act()

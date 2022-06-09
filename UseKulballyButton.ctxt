@@ -1,0 +1,8 @@
+#BlueJ class context
+comment0.target=UseKulballyButton
+comment0.text=\r\n\ A\ button\ that\ asks\ the\ player\ if\ they\ want\ to\ use\ the\ Spear\ of\ Kulbally\r\n\ Only\ works\ when\ player\ stands\ on\ shrine\ to\ place\ the\ Spear\r\n\ @author\ Jonathan\ Zhao\r\n\ @version\ June\ 8\r\n
+comment1.params=returnWorld
+comment1.target=UseKulballyButton(greenfoot.World)
+comment2.params=
+comment2.target=void\ act()
+numComments=3
