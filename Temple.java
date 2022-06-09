@@ -30,9 +30,9 @@ public class Temple extends World
         addObject(Wallet.walletLabel, 100, 20);
         
         // Add shrines
-        TempleShrine shrine1 = new TempleShrine();
-        TempleShrine shrine2 = new TempleShrine();
-        TempleShrine shrine3 = new TempleShrine();
+        TempleShrineGoblet shrine1 = new TempleShrineGoblet();
+        TempleShrineSpear shrine2 = new TempleShrineSpear();
+        TempleShrineTome shrine3 = new TempleShrineTome();
         addObject(shrine1, 300, 400);
         addObject(shrine2, 600, 200);
         addObject(shrine3, 900, 400);

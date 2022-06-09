@@ -7,7 +7,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  * @author Jonathan Zhao
  * @version June 7
  */
-public class TempleShrine extends Actor
+public class TempleShrineGoblet extends Actor
 {
     public static boolean touchingShrine = false;
     public void act()
@@ -23,14 +23,6 @@ public class TempleShrine extends Actor
         if(GobletOfYabba.placedGoblet)
         {
             setImage("images/ShrineWithYabba.png"); // shrine with goblet on it
-        }
-        else if(SpearOfKulbally.placedSpear)
-        {
-            setImage("images/ShrineWithKulbally.png");
-        }
-        else if(TomeOfRebaer.placedTome)
-        {
-            setImage("images/ShrineWithRebaer.png");
         }
         else
         {

@@ -9,13 +9,11 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 public class World2Ver4 extends World
 {
     Label mainCharacterHPLabel = new Label("HP: " + MainCharacterFighting.mainCharacterHP, 50);
-    World returnWorld;
     
     public World2Ver4(World returnWorld)
     {    
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
         super(1200, 800, 1); 
-        this.returnWorld = returnWorld;
         MainCharacter mainCharacter = new MainCharacter();
         addObject(mainCharacter, 300, 650);
         
