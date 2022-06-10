@@ -8,6 +8,13 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class TheReds extends Actor
 {
+    public static boolean canMove = true; // Can't move if speaking to main character
+    
+    public static void resetStaticI()
+    {
+        canMove = true;
+    }
+    
     SimpleTimer animationTimer = new SimpleTimer();
     GreenfootImage[] walk = new GreenfootImage[7];
     public int getRandomNumber(int start, int end)
@@ -42,9 +49,16 @@ public class TheReds extends Actor
     public boolean firstTextSpawned = false;
     public void act()
     {
-        animateWalkRed();
+        if(canMove)
+        {
+            animateWalkRed();
+            move(2);
+        }
+        else
+        {
+            setImage("images/WalkCycle/RedIdle.png");
+        }
         talk();
-        move(2);
         if(isAtEdge())
         {
             turn(180);
@@ -63,18 +77,24 @@ public class TheReds extends Actor
             Stronghold world = (Stronghold) getWorld();
             world.addObject(text58, 600, 650);
             firstTextSpawned = true;
+            MainCharacter.canMove = false;
+            canMove = false;
         }
         if(isTouching(MainCharacter.class) && firstTextSpawned == false && randomText == 2)
         {
             Stronghold world = (Stronghold) getWorld();
             world.addObject(text59, 600, 650);
             firstTextSpawned = true;
+            MainCharacter.canMove = false;
+            canMove = false;
         }
         if(isTouching(MainCharacter.class) && firstTextSpawned == false && randomText == 3)
         {
             Stronghold world = (Stronghold) getWorld();
             world.addObject(text60, 600, 650);
             firstTextSpawned = true;
+            MainCharacter.canMove = false;
+            canMove = false;
         }
         if(Greenfoot.mouseClicked(text58))
         {

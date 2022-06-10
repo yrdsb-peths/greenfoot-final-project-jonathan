@@ -22,6 +22,7 @@ public class UseTomeButton extends Actor
         {
             TomeOfRebaer.placedTome = true;
             TomeOfRebaer.hasTome = false;
+            MainCharacter.canMove = true;
         }
     }
 }

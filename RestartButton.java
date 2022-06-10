@@ -1,26 +1,26 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * No button for the option of placing the relics on the shrines
+ * Restarts the game when user dies
  * 
- * @author Jonathan Zhao
- * @version June 9
+ * @author Jonathan Zhao 
+ * @version June 10
  */
-public class NoButtonRelicUse extends Actor
+public class RestartButton extends Actor
 {
     public void act()
     {
         if(Greenfoot.mouseMoved(this))
         {
-            setImage("images/CharacterText/NoButton2.png");
+            setImage("images/CharacterText/RestartButton2.png");
         }
         if(Greenfoot.mouseMoved(null) && !Greenfoot.mouseMoved(this))
         {
-            setImage("images/CharacterText/NoButton1.png");
+            setImage("images/CharacterText/RestartButton1.png");
         }
         if(Greenfoot.mouseClicked(this))
         {
-            MainCharacter.canMove = true;
+            Greenfoot.setWorld(new Title());
         }
     }
 }

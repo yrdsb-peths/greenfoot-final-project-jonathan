@@ -22,6 +22,7 @@ public class UseGobletButton extends Actor
         {
             GobletOfYabba.placedGoblet = true;
             GobletOfYabba.hasGoblet = false;
+            MainCharacter.canMove = true;
         }
     }
 }

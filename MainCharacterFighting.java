@@ -21,6 +21,10 @@ public class MainCharacterFighting extends Actor
     public void act()
     {
         animatePunch();
+        if(mainCharacterHP <= 0)
+        {
+            Greenfoot.setWorld(new YouDied());
+        }
     }
 
     public void animatePunch()

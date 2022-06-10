@@ -22,6 +22,7 @@ public class UseSpearButton extends Actor
         {
             SpearOfKulbally.placedSpear = true;
             SpearOfKulbally.hasSpear = false;
+            MainCharacter.canMove = true;
         }
     }
 }

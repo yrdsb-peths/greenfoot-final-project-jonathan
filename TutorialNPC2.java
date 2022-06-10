@@ -26,6 +26,7 @@ public class TutorialNPC2 extends Actor
         {
             World2 world = (World2) getWorld();
             world.addObject(text8, 600, 650);
+            MainCharacter.canMove = false;
         }
         if(Greenfoot.mouseClicked(text8))
         {

@@ -39,6 +39,7 @@ public class MerchantTutorial extends Actor
         {
             World2Ver3 world = (World2Ver3) getWorld();
             world.addObject(text20, 600, 650);
+            MainCharacter.canMove = false;
         }
         if(Greenfoot.mouseClicked(text20))
         {
@@ -130,6 +131,7 @@ public class MerchantTutorial extends Actor
         {
             World2Ver3 world = (World2Ver3) getWorld();
             Greenfoot.setWorld(new World2Ver4(getWorld()));
+            MainCharacter.canMove = true;
         }
     }
 }

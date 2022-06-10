@@ -22,6 +22,7 @@ public class TempleShrineSpear extends Actor
             NoButtonRelicUse noButton = new NoButtonRelicUse();
             world.addObject(noButton, 890, 700);
             textSpawned = true;
+            MainCharacter.canMove = false;
         }
         if(SpearOfKulbally.placedSpear)
         {

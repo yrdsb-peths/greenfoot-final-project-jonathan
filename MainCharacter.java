@@ -8,6 +8,13 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class MainCharacter extends Actor
 {
+    public static boolean canMove = true;  // Players can move unless speaking to someone
+    
+    public static void resetStatic()
+    {
+        canMove = true;
+    }
+    
     SimpleTimer animationTimer = new SimpleTimer();
     GreenfootImage[] walk = new GreenfootImage[7];
     
@@ -54,51 +61,51 @@ public class MainCharacter extends Actor
         
         
         // Sprint by holding shift
-        if(Greenfoot.isKeyDown("a") && Greenfoot.isKeyDown("shift"))
+        if(Greenfoot.isKeyDown("a") && Greenfoot.isKeyDown("shift") && canMove)
         {
             setRotation(180);
             move(6);
             animateSprintMainCharacter();
         }
-        else if(Greenfoot.isKeyDown("d") && Greenfoot.isKeyDown("shift"))
+        else if(Greenfoot.isKeyDown("d") && Greenfoot.isKeyDown("shift") && canMove)
         {
             setRotation(0);
             move(6);
             animateSprintMainCharacter();
         }
 
-        else if(Greenfoot.isKeyDown("w") && Greenfoot.isKeyDown("shift"))
+        else if(Greenfoot.isKeyDown("w") && Greenfoot.isKeyDown("shift") && canMove)
         {
             setRotation(270);
             move(6);
             animateSprintMainCharacter();
         }
-        else if(Greenfoot.isKeyDown("s") && Greenfoot.isKeyDown("shift"))
+        else if(Greenfoot.isKeyDown("s") && Greenfoot.isKeyDown("shift") && canMove)
         {
             setRotation(90);
             move(6);
             animateSprintMainCharacter();
         }
-        else if(Greenfoot.isKeyDown("a"))
+        else if(Greenfoot.isKeyDown("a") && canMove)
         {
             setRotation(180);
             move(3);
             animateWalkMainCharacter();
         }
-        else if(Greenfoot.isKeyDown("d"))
+        else if(Greenfoot.isKeyDown("d") && canMove)
         {
             setRotation(0);
             move(3);
             animateWalkMainCharacter();
         }
 
-        else if(Greenfoot.isKeyDown("w"))
+        else if(Greenfoot.isKeyDown("w") && canMove)
         {
             setRotation(270);
             move(3);
             animateWalkMainCharacter();
         }
-        else if(Greenfoot.isKeyDown("s"))
+        else if(Greenfoot.isKeyDown("s") && canMove)
         {
             setRotation(90);
             move(3);

@@ -44,6 +44,7 @@ public class TutorialNPC2Ver2 extends Actor
         {
             MainCharacterFighting.mainCharacterHP = 100;
             Greenfoot.setWorld(new World2Ver3());
+            MainCharacter.canMove = true;
         }
     }
 }

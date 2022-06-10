@@ -25,6 +25,7 @@ public class TempleShrineGoblet extends Actor
             NoButtonRelicUse noButton = new NoButtonRelicUse();
             world.addObject(noButton, 890, 700);
             textSpawned = true;
+            MainCharacter.canMove = false;
         }
         if(GobletOfYabba.placedGoblet)
         {

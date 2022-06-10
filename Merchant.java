@@ -26,6 +26,7 @@ public class Merchant extends Actor
             ByeButton byeButton = new ByeButton();
             world.addObject(buyButton, 550, 700);
             world.addObject(byeButton, 850, 700);
+            MainCharacter.canMove = false;
         }
         else if(isTouching(MainCharacter.class) && Greenfoot.isKeyDown("f") && TheShop.relicsBought == 3)
         {
@@ -35,6 +36,7 @@ public class Merchant extends Actor
             ByeButton byeButton = new ByeButton();
             world.addObject(buyButton, 550, 700);
             world.addObject(byeButton, 850, 700);
+            MainCharacter.canMove = false;
         }
         
     }

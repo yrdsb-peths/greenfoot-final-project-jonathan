@@ -33,7 +33,7 @@ public class FirstWorld extends World
         GobletOfYabba.resetStatic();
         SpearOfKulbally.resetStatic();
         TomeOfRebaer.resetStatic();
-        
+        MainCharacter.resetStatic();
     }
     
     

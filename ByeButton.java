@@ -22,6 +22,7 @@ public class ByeButton extends Actor
         if(Greenfoot.mouseClicked(this))
         {
             Greenfoot.setWorld(new World2Ver4(getWorld()));
+            MainCharacter.canMove = true;
         }
     }
 }

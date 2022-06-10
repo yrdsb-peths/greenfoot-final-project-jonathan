@@ -111,8 +111,8 @@ public class TheRedsFighting extends Actor
         animateFight();
         if(FightButton.enemyTurn)
         {
-            MainCharacterFighting.mainCharacterHP -= Greenfoot.getRandomNumber(15);
             FightButton.enemyTurn = false;
+            MainCharacterFighting.mainCharacterHP -= Greenfoot.getRandomNumber(15);
         }
         if(redHP <= 0)
         {
@@ -120,6 +120,9 @@ public class TheRedsFighting extends Actor
             Greenfoot.setWorld(new Stronghold(getWorld()));
             resetStatic();
             FightButton.punch = false;
+            MainCharacter.canMove = true;
+            TheReds.canMove = true;
+            FightButton.enemyTurnAnimations = false;
         }
     }
 }

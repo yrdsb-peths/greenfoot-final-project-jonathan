@@ -1,14 +1,16 @@
 #BlueJ class context
 comment0.target=TheReds
 comment0.text=\r\n\ The\ Reds\ in\ their\ overworld\ form.\r\n\ \r\n\ @author\ Jonathan\ Zhao\r\n\ @version\ June\ 6\r\n
-comment1.params=start\ end
-comment1.target=int\ getRandomNumber(int,\ int)
-comment2.params=
-comment2.target=TheReds()
+comment1.params=
+comment1.target=void\ resetStaticI()
+comment2.params=start\ end
+comment2.target=int\ getRandomNumber(int,\ int)
 comment3.params=
-comment3.target=void\ animateWalkRed()
+comment3.target=TheReds()
 comment4.params=
-comment4.target=void\ act()
+comment4.target=void\ animateWalkRed()
 comment5.params=
-comment5.target=void\ talk()
-numComments=6
+comment5.target=void\ act()
+comment6.params=
+comment6.target=void\ talk()
+numComments=7
