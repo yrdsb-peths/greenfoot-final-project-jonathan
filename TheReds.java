@@ -10,7 +10,7 @@ public class TheReds extends Actor
 {
     public static boolean canMove = true; // Can't move if speaking to main character
     
-    public static void resetStaticI()
+    public static void resetStatic()
     {
         canMove = true;
     }

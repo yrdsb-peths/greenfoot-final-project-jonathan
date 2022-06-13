@@ -9,6 +9,21 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 public class YesButtonHeal extends Actor
 {
     public static boolean removeText = false;
+    public static boolean hasCheckpoint = false;
+    
+    public static void resetStatic()
+    {
+        hasCheckpoint = false;
+    }
+    
+    public static int savePotions;
+    public static int saveWallet;
+    public static boolean saveGoblet;
+    public static boolean saveSpear;
+    public static boolean saveTome;
+    public static boolean savePlacedGoblet;
+    public static boolean savePlacedSpear;
+    public static boolean savePlacedTome;
     public void act()
     {
         if(Greenfoot.mouseMoved(this))
@@ -23,13 +38,20 @@ public class YesButtonHeal extends Actor
         {
             World2Ver4 world = (World2Ver4) getWorld();
             MainCharacterFighting.mainCharacterHP = 100;
-            removeText = true;
+            Greenfoot.setWorld(new World2Ver4(getWorld()));
             
             
-            
-            
-            
-            
+            // Saves the character's loadout
+            savePotions = Potion.numberPotions;
+            saveWallet = Wallet.wallet;
+            saveGoblet = GobletOfYabba.hasGoblet;
+            saveSpear = SpearOfKulbally.hasSpear;
+            saveTome = TomeOfRebaer.hasTome;
+            savePlacedGoblet = GobletOfYabba.placedGoblet;
+            savePlacedSpear = SpearOfKulbally.placedSpear;
+            savePlacedTome = TomeOfRebaer.placedTome;
+            hasCheckpoint = true;
+
         }
         if(removeText)
         {

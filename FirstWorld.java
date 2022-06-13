@@ -34,6 +34,9 @@ public class FirstWorld extends World
         SpearOfKulbally.resetStatic();
         TomeOfRebaer.resetStatic();
         MainCharacter.resetStatic();
+        YesButtonHeal.resetStatic();
+        TheRedsFighting.resetStatic();
+        TheReds.resetStatic();
     }
     
     

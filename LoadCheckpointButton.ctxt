@@ -1,0 +1,6 @@
+#BlueJ class context
+comment0.target=LoadCheckpointButton
+comment0.text=\r\n\ Button\ that\ loads\ checkpoint\ upon\ death.\r\n\ Brings\ player\ back\ to\ the\ second\ tutorial\ NPC\ after\ their\ last\ heal\r\n\ Doesn't\ let\ player\ load\ if\ they\ didn't\ make\ a\ save\r\n\ \r\n\ @author\ Jonathan\ Zhao\r\n\ @version\ June\ 12\r\n
+comment1.params=
+comment1.target=void\ act()
+numComments=2

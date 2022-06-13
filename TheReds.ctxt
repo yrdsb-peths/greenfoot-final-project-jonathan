@@ -2,7 +2,7 @@
 comment0.target=TheReds
 comment0.text=\r\n\ The\ Reds\ in\ their\ overworld\ form.\r\n\ \r\n\ @author\ Jonathan\ Zhao\r\n\ @version\ June\ 6\r\n
 comment1.params=
-comment1.target=void\ resetStaticI()
+comment1.target=void\ resetStatic()
 comment2.params=start\ end
 comment2.target=int\ getRandomNumber(int,\ int)
 comment3.params=

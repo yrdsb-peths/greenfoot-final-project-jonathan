@@ -37,12 +37,12 @@ public class World2Ver4 extends World
         
         // Add wallet
         Wallet wallet = new Wallet();
-        Wallet.walletLabel.setValue("$" + Wallet.wallet);
         addObject(Wallet.walletLabel, 100, 20);
     }
     
     public void act()
     {
         mainCharacterHPLabel.setValue("HP: " + MainCharacterFighting.mainCharacterHP);
+        Wallet.walletLabel.setValue("$" + Wallet.wallet);
     }
 }

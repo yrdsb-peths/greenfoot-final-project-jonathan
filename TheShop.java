@@ -41,21 +41,21 @@ public class TheShop extends World
         
         
         
-        if(!GobletOfYabba.hasGoblet)
+        if(!GobletOfYabba.hasGoblet && !GobletOfYabba.placedGoblet)
         {
             ShopGoblet shopGoblet = new ShopGoblet();
             addObject(shopGoblet, 500, 450);
             addObject(gobletPriceTag, 500, 450);
         }
         
-        if(!SpearOfKulbally.hasSpear)
+        if(!SpearOfKulbally.hasSpear && !SpearOfKulbally.placedSpear)
         {
             ShopSpear shopSpear = new ShopSpear();
             addObject(shopSpear, 750, 500);
             addObject(spearPriceTag, 750, 450);
         }
         
-        if(!TomeOfRebaer.hasTome)
+        if(!TomeOfRebaer.hasTome && !TomeOfRebaer.placedTome)
         {
             ShopTome shopTome = new ShopTome();
             addObject(shopTome, 1025, 500);
