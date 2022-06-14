@@ -1,0 +1,6 @@
+#BlueJ class context
+comment0.target=RoadToGates
+comment0.text=\r\n\ Road\ that\ travels\ to\ the\ the\ gates\r\n\ \r\n\ @author\ Jonathan\ Zhao\r\n\ @version\ June\ 13\r\n
+comment1.params=
+comment1.target=void\ act()
+numComments=2
