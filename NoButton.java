@@ -28,6 +28,7 @@ public class NoButton extends Actor
             Wallet wallet = new Wallet();
             Wallet.walletLabel.setValue("$" + Wallet.wallet);
             world.addObject(Wallet.walletLabel, 100, 20);
+            MainCharacter.canMove = true;
         }
     }
 }

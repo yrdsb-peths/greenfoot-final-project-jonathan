@@ -41,6 +41,7 @@ public class TutorialNPC extends Actor
             world.addObject(yesButton1, 760, 700);
             world.addObject(noButton1, 890, 700);
             text1Spawned = true;
+            MainCharacter.canMove = false;
         }
         
         

@@ -8,7 +8,6 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class YesButtonHeal extends Actor
 {
-    public static boolean removeText = false;
     public static boolean hasCheckpoint = false;
     
     public static void resetStatic()
@@ -39,6 +38,7 @@ public class YesButtonHeal extends Actor
             World2Ver4 world = (World2Ver4) getWorld();
             MainCharacterFighting.mainCharacterHP = 100;
             Greenfoot.setWorld(new World2Ver4(getWorld()));
+            MainCharacter.canMove = true;
             
             
             // Saves the character's loadout
@@ -52,11 +52,6 @@ public class YesButtonHeal extends Actor
             savePlacedTome = TomeOfRebaer.placedTome;
             hasCheckpoint = true;
 
-        }
-        if(removeText)
-        {
-            World2Ver4 world = (World2Ver4) getWorld();
-            world.removeObject(this);
         }
     }
 }

@@ -1,12 +1,12 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Brings main character from the stronghold back to World2Ver4
+ * Brings main character back to the world they came from
  * 
  * @author Jonathan Zhao 
- * @version June 3
+ * @version June 14
  */
-public class RoadStrongholdToWorld2Ver4 extends Actor
+public class RoadReturn extends Actor
 {
     World returnWorld;
     public void act()
@@ -17,7 +17,7 @@ public class RoadStrongholdToWorld2Ver4 extends Actor
         }
     }
     
-    public RoadStrongholdToWorld2Ver4(World returnWorld)
+    public RoadReturn(World returnWorld)
     {
         this.returnWorld = returnWorld;
     }

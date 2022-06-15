@@ -12,6 +12,12 @@ public class FightButtonTutorial extends Actor
     World2Battle world = (World2Battle) getWorld();
     
     public static boolean punchTutorial = false;
+    
+    public static void resetStatic()
+    {
+        punchTutorial = false;
+    }
+    
     public static boolean enemyTurnTutorial = false;
     public static boolean enemyTurnAnimationsTutorial = false;
     

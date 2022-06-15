@@ -8,10 +8,13 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class FightButton extends Actor
 {
-    Label redHPLabel = new Label(TheRedsFighting.redHP, 50);
-    StrongholdBattle world = (StrongholdBattle) getWorld();
     
     public static boolean punch = false;
+    public static void resetStatic()
+    {
+        punch = false;
+    }
+    
     public static boolean enemyTurn = false;
     public static boolean enemyTurnAnimations = false;
     

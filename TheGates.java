@@ -20,8 +20,12 @@ public class TheGates extends World
         addObject(mainCharacter, 1100, 400);
         
         // Create a road back to Stronghold
-        RoadGatesToStronghold road = new RoadGatesToStronghold(returnWorld);
+        RoadReturn road = new RoadReturn(returnWorld);
         addObject(road, 1200, 400);
+        
+        // Create a road to headquarters
+        RoadToHeadquarters roadHQ = new RoadToHeadquarters();
+        addObject(roadHQ, 0, 400);
         
         // Create main character's hp
         addObject(mainCharacterHPLabel, 100, 60);
@@ -31,10 +35,6 @@ public class TheGates extends World
         Wallet.walletLabel.setValue("$" + Wallet.wallet);
         addObject(Wallet.walletLabel, 100, 20);
         
-        // Create enemy 
-        TheReds theReds = new TheReds();
-        addObject(theReds, 400, 400);
-        theReds.setRotation(270);
     }
     
     public void act()

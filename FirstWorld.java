@@ -37,6 +37,8 @@ public class FirstWorld extends World
         YesButtonHeal.resetStatic();
         TheRedsFighting.resetStatic();
         TheReds.resetStatic();
+        FightButton.resetStatic();
+        FightButtonTutorial.resetStatic();
     }
     
     

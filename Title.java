@@ -8,14 +8,11 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class Title extends World
 {
-    Label titleLabel = new Label("To Be Determined", 150);
-    
+ 
     public Title()
     {    
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
         super(1200, 800, 1); 
-        
-        addObject(titleLabel, 600, 200);
         prepare();
     }
     

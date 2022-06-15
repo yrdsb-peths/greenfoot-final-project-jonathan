@@ -1,8 +1,0 @@
-#BlueJ class context
-comment0.target=RoadGatesToStronghold
-comment0.text=\r\n\ Brings\ main\ character\ from\ the\ gates\ back\ to\ stronghold\r\n\ \r\n\ @author\ Jonathan\ Zhao\ \r\n\ @version\ June\ 13\r\n
-comment1.params=
-comment1.target=void\ act()
-comment2.params=returnWorld
-comment2.target=RoadGatesToStronghold(greenfoot.World)
-numComments=3

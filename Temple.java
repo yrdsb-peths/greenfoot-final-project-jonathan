@@ -18,8 +18,9 @@ public class Temple extends World
         addObject(mainCharacter, 600, 700);
         
         // Create a road back to World2Ver4
-        RoadTempleToWorld2Ver4 road = new RoadTempleToWorld2Ver4(returnWorld);
+        RoadReturn road = new RoadReturn(returnWorld);
         addObject(road, 600, 800);
+        road.setRotation(90);
         
         // Create main character's hp
         addObject(mainCharacterHPLabel, 100, 60);

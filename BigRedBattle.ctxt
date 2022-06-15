@@ -1,0 +1,8 @@
+#BlueJ class context
+comment0.target=BigRedBattle
+comment0.text=\r\n\ Fighting\ world\ against\ Big\ Red\r\n\ \r\n\ @author\ Jonathan\ Zhao\ \r\n\ @version\ June\ 14\r\n
+comment1.params=
+comment1.target=BigRedBattle()
+comment2.params=
+comment2.target=void\ act()
+numComments=3

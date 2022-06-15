@@ -56,6 +56,7 @@ public class YesButton extends Actor
             Wallet.wallet += 300;
             Wallet.walletLabel.setValue("$" + Wallet.wallet);
             world.addObject(Wallet.walletLabel, 100, 20);
+            MainCharacter.canMove = true;
         }
 
     }

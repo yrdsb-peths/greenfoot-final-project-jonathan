@@ -29,11 +29,7 @@ public class TutorialNPC2Ver3 extends Actor
                 world.addObject(yesButtonHeal, 760, 700);
                 world.addObject(noButtonHeal, 890, 700);
                 text1Spawned = true;
-                
-                if(YesButtonHeal.removeText == true)
-                {
-                    world.removeObject(text19);
-                }
+                MainCharacter.canMove = false;
             }    
     }
 }
