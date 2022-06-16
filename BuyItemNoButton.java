@@ -1,7 +1,7 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * A button do click to not buy an item when prompted
+ * A button to click to not buy an item when prompted
  * 
  * @author Jonathan Zhao
  * @version June 3

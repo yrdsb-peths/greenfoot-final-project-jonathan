@@ -24,7 +24,9 @@ public class LoadCheckpointButton extends Actor
         {
             // Load conditions at save
             MainCharacterFighting.mainCharacterHP = 100;
+            MainCharacter.resetStatic();
             Greenfoot.setWorld(new World2Ver4(getWorld()));
+            ThrowingKnife.numberKnives = YesButtonHeal.saveKnives;
             Potion.numberPotions = YesButtonHeal.savePotions;
             Wallet.wallet = YesButtonHeal.saveWallet;
             GobletOfYabba.hasGoblet = YesButtonHeal.saveGoblet;
@@ -37,7 +39,7 @@ public class LoadCheckpointButton extends Actor
             // reset enemy status
             TheRedsFighting.resetStatic();
             TheReds.resetStatic();
-            
+            BigRedFighting.resetStatic();
 
         }
     }

@@ -10,9 +10,13 @@ public class RoadToHeadquarters extends Actor
 {
     public void act()
     {
-        if(isTouching(MainCharacter.class))
+        if(isTouching(MainCharacter.class) && BigRedFighting.bigRedBeated == false)
         {
             Greenfoot.setWorld(new Headquarters(getWorld()));
+        }
+        else if(isTouching(MainCharacter.class) && BigRedFighting.bigRedBeated)
+        {
+            Greenfoot.setWorld(new HeadquartersVer2(getWorld()));
         }
     }
 }

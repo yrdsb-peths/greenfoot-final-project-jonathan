@@ -17,7 +17,7 @@ public class TheReds extends Actor
     
     SimpleTimer animationTimer = new SimpleTimer();
     GreenfootImage[] walk = new GreenfootImage[7];
-    public int getRandomNumber(int start, int end)
+    public int getRandomNumber(int start, int end) // Gets random number between two numbers
     {
         int normal = Greenfoot.getRandomNumber(end-start+1);
         return normal + start;

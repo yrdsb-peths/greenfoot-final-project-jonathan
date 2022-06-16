@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.target=BigRedTalking
+comment0.text=\r\n\ Big\ red\ talks\ about\ his\ shop\r\n\ \r\n\ @author\ Jonathan\ Zhao\r\n\ @version\ June\ 15\r\n
+comment1.params=
+comment1.target=void\ act()
+comment2.params=
+comment2.target=BigRedTalking()
+comment3.params=
+comment3.target=void\ animateFight()
+numComments=4

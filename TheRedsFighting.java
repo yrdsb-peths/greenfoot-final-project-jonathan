@@ -13,11 +13,14 @@ public class TheRedsFighting extends Actor
     GreenfootImage[] gettingHit = new GreenfootImage[2];
     GreenfootImage[] attack = new GreenfootImage[2];
     
+    
+    public static boolean theReds = false; // If fighting the reds, is true
     public static int redHP = 100;
-    // Reset HP
+    // Reset statics
     public static void resetStatic()
     {
         redHP = 100;
+        theReds = false;
     }
     
     public TheRedsFighting()
@@ -123,6 +126,7 @@ public class TheRedsFighting extends Actor
             MainCharacter.canMove = true;
             TheReds.canMove = true;
             FightButton.enemyTurnAnimations = false;
+            theReds = false;
         }
     }
 }

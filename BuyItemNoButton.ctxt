@@ -1,6 +1,6 @@
 #BlueJ class context
 comment0.target=BuyItemNoButton
-comment0.text=\r\n\ A\ button\ do\ click\ to\ not\ buy\ an\ item\ when\ prompted\r\n\ \r\n\ @author\ Jonathan\ Zhao\r\n\ @version\ June\ 3\r\n
+comment0.text=\r\n\ A\ button\ to\ click\ to\ not\ buy\ an\ item\ when\ prompted\r\n\ \r\n\ @author\ Jonathan\ Zhao\r\n\ @version\ June\ 3\r\n
 comment1.params=
 comment1.target=void\ act()
 numComments=2

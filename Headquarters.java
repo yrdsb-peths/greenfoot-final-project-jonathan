@@ -20,7 +20,7 @@ public class Headquarters extends World
         addObject(mainCharacter, 1100, 400);
         
         // Create a road back to Gates
-        RoadReturn road = new RoadReturn(returnWorld);
+        RoadToGates road = new RoadToGates();
         addObject(road, 1200, 400);
         
         // Create main character's hp

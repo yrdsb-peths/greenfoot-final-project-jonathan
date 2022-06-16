@@ -16,6 +16,7 @@ public class YesButtonHeal extends Actor
     }
     
     public static int savePotions;
+    public static int saveKnives;
     public static int saveWallet;
     public static boolean saveGoblet;
     public static boolean saveSpear;
@@ -43,6 +44,7 @@ public class YesButtonHeal extends Actor
             
             // Saves the character's loadout
             savePotions = Potion.numberPotions;
+            saveKnives = ThrowingKnife.numberKnives;
             saveWallet = Wallet.wallet;
             saveGoblet = GobletOfYabba.hasGoblet;
             saveSpear = SpearOfKulbally.hasSpear;

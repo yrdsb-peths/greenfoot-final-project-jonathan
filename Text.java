@@ -341,6 +341,71 @@ public class Text extends Actor
         {
             setImage("images/CharacterText/Text66.png");
         }
+        
+        if(id == 67)
+        {
+            setImage("images/CharacterText/Text67.png");
+        }
+        
+        if(id == 68)
+        {
+            setImage("images/CharacterText/Text68.png");
+        }
+        
+        if(id == 69)
+        {
+            setImage("images/CharacterText/Text69.png");
+        }
+        
+        if(id == 70)
+        {
+            setImage("images/RedShopName.png");
+        }
+        
+        if(id == 71)
+        {
+            setImage("images/NoKnives.png");
+        }
+        
+        if(id == 72)
+        {
+            setImage("images/NotCombat.png");
+        }
+        
+        if(id == 73)
+        {
+            setImage("images/KnifeUseConfirm.png");
+        }
+        
+        if(id == 74)
+        {
+            setImage("images/CharacterText/WannaBuyKnife.png");
+        }
+        
+        if(id == 75)
+        {
+            setImage("images/CharacterText/Text75.png");
+        }
+        
+        if(id == 76)
+        {
+            setImage("images/CharacterText/Text76.png");
+        }
+        
+        if(id == 77)
+        {
+            setImage("images/CharacterText/Text77.png");
+        }
+        
+        if(id == 78)
+        {
+            setImage("images/CharacterText/Text78.png");
+        }
+        
+        if(id == 79)
+        {
+            setImage("images/CharacterText/Text79.png");
+        }
     }
     
     public void act()

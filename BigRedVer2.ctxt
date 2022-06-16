@@ -1,0 +1,8 @@
+#BlueJ class context
+comment0.target=BigRedVer2
+comment0.text=\r\n\ Big\ red\ after\ the\ fight.\ Acts\ as\ a\ weapon\ shop\r\n\ \r\n\ @author\ Jonathan\ Zhao\r\n\ @version\ June\ 15\r\n
+comment1.params=
+comment1.target=void\ act()
+comment2.params=
+comment2.target=void\ talk()
+numComments=3

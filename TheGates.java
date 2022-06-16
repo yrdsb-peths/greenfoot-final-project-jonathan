@@ -20,7 +20,7 @@ public class TheGates extends World
         addObject(mainCharacter, 1100, 400);
         
         // Create a road back to Stronghold
-        RoadReturn road = new RoadReturn(returnWorld);
+        RoadToStronghold road = new RoadToStronghold();
         addObject(road, 1200, 400);
         
         // Create a road to headquarters

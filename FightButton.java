@@ -30,8 +30,21 @@ public class FightButton extends Actor
         }
         if(Greenfoot.mouseClicked(this))
         {
-            TheRedsFighting.redHP -= Greenfoot.getRandomNumber(21);
-            punch = true;
+            if(TheRedsFighting.theReds)
+            {
+                TheRedsFighting.redHP -= Greenfoot.getRandomNumber(21);
+                punch = true;
+            }
+            else if(BigRedFighting.bigRed)
+            {
+                BigRedFighting.bigRedHP -= Greenfoot.getRandomNumber(21);
+                punch = true;
+            }
+            else if(AngelFighting.angel)
+            {
+                AngelFighting.angelHP -= Greenfoot.getRandomNumber(21);
+                punch = true;
+            }
         }
     }
 }

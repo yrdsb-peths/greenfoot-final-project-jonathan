@@ -1,0 +1,8 @@
+#BlueJ class context
+comment0.target=HeadquartersVer2
+comment0.text=\r\n\ The\ headquarters\ after\ beating\ big\ red\r\n\ Big\ red\ acts\ like\ a\ merchant\ here\ and\ sells\ weapons.\r\n\ \r\n\ @author\ Jonathan\ Zhao\r\n\ @version\ June\ 15\r\n
+comment1.params=returnWorld
+comment1.target=HeadquartersVer2(greenfoot.World)
+comment2.params=
+comment2.target=void\ act()
+numComments=3

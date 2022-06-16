@@ -9,7 +9,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 public class BigRedBattle extends World
 {
     Label mainCharacterHPLabel = new Label("HP: " + MainCharacterFighting.mainCharacterHP, 50);
-    
+    Label redHPLabel = new Label("HP: " + BigRedFighting.bigRedHP, 50);
     public BigRedBattle()
     {    
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
@@ -20,10 +20,12 @@ public class BigRedBattle extends World
         addObject(mainCharacterFighting, 200, 650);
         
         // Create enemy's hp
-         
+        addObject(redHPLabel, 1100, 60);
         
         // Create the enemy
-        
+        BigRedFighting bigRed = new BigRedFighting();
+        addObject(bigRed, 800, 500);
+        BigRedFighting.bigRed = true;
         
         // Create main character's hp
         addObject(mainCharacterHPLabel, 100, 60);
@@ -40,6 +42,6 @@ public class BigRedBattle extends World
     public void act()
     {
         mainCharacterHPLabel.setValue("HP: " + MainCharacterFighting.mainCharacterHP);
-        
+        redHPLabel.setValue("HP: " + BigRedFighting.bigRedHP);
     }
 }

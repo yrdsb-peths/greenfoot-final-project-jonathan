@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.target=ThrowingKnife
+comment0.text=\r\n\ Throwing\ knife.\ Does\ 75\ damage\ upon\ use.\r\n\ \r\n\ @author\ Jonathan\ Zhao\r\n\ @version\ June\ 15\r\n
+comment1.params=
+comment1.target=void\ resetStatic()
+comment2.params=
+comment2.target=void\ act()
+comment3.params=
+comment3.target=void\ useKnife()
+numComments=4

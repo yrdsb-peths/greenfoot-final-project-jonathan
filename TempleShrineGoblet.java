@@ -35,5 +35,9 @@ public class TempleShrineGoblet extends Actor
         {
             setImage("images/TheShrine.png"); // shrine without anything
         }
+        if(GobletOfYabba.placedGoblet && SpearOfKulbally.placedSpear && TomeOfRebaer.placedTome)
+        {
+            Greenfoot.setWorld(new PreFinalBattle());
+        }
     }
 }

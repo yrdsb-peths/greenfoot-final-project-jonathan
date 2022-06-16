@@ -9,6 +9,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 public class ItemBag extends World
 {   
     Label numberOfPotionsLabel = new Label("x" + Potion.numberPotions, 70);
+    Label numberOfKnivesLabel = new Label("x" + ThrowingKnife.numberKnives, 70);
     Label mainCharacterHPLabel = new Label("HP: " + MainCharacterFighting.mainCharacterHP, 50);
     World returnWorld;
     
@@ -19,10 +20,13 @@ public class ItemBag extends World
         super(1200, 800, 1); 
         this.returnWorld = returnWorld;
         Potion potion = new Potion();
+        ThrowingKnife knife = new ThrowingKnife();
         Text itemBag = new Text(38);
         addObject(itemBag, 600, 100);
-        addObject(potion, 200, 450);
-        addObject(numberOfPotionsLabel, 200, 450);
+        addObject(potion, 200, 350);
+        addObject(numberOfPotionsLabel, 200, 350);
+        addObject(knife, 200, 650);
+        addObject(numberOfKnivesLabel, 200, 650);
         
         // Create main character's hp
         addObject(mainCharacterHPLabel, 100, 60);
@@ -30,19 +34,19 @@ public class ItemBag extends World
         if(GobletOfYabba.hasGoblet && !GobletOfYabba.placedGoblet)
         {
             GobletOfYabba gobletOfYabba = new GobletOfYabba();
-            addObject(gobletOfYabba, 500, 450);
+            addObject(gobletOfYabba, 500, 350);
         }
         
         if(SpearOfKulbally.hasSpear && !SpearOfKulbally.placedSpear)
         {
             SpearOfKulbally spearOfKulbally = new SpearOfKulbally();
-            addObject(spearOfKulbally, 750, 500);
+            addObject(spearOfKulbally, 750, 400);
         }
         
         if(TomeOfRebaer.hasTome && !TomeOfRebaer.placedTome)
         {
             TomeOfRebaer tomeOfRebaer = new TomeOfRebaer();
-            addObject(tomeOfRebaer, 1025, 500);
+            addObject(tomeOfRebaer, 1025, 400);
         }
         
     }

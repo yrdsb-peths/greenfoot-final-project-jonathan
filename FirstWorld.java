@@ -39,6 +39,10 @@ public class FirstWorld extends World
         TheReds.resetStatic();
         FightButton.resetStatic();
         FightButtonTutorial.resetStatic();
+        BigRedFighting.resetStatic();
+        AngelFighting.resetStatic();
+        ThrowingKnife.resetStatic();
+        
     }
     
     

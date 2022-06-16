@@ -3,8 +3,8 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 /**
  * Write a description of class TutorialNPC2Nothing here.
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @author Jonathan Zhao
+ * @version June 2
  */
 public class TutorialNPC2Nothing extends Actor
 {

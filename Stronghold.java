@@ -20,7 +20,7 @@ public class Stronghold extends World
         addObject(mainCharacter, 1100, 400);
         
         // Create a road back to World2Ver4
-        RoadReturn road = new RoadReturn(returnWorld);
+        RoadToWorld2Ver4 road = new RoadToWorld2Ver4();
         addObject(road, 1200, 400);
         
         // Create a road to gates

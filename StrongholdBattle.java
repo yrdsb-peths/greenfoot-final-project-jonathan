@@ -25,6 +25,7 @@ public class StrongholdBattle extends World
         // Create the enemy
         TheRedsFighting theReds = new TheRedsFighting();
         addObject(theReds, 800, 500);
+        TheRedsFighting.theReds = true; // Is fighting the reds
         
         // Create main character's hp
         addObject(mainCharacterHPLabel, 100, 60);
