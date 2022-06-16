@@ -19,7 +19,7 @@ public class AngelFighting extends Actor
     // Reset statics
     public static void resetStatic()
     {
-        angelHP = 250;
+        angelHP = 500;
         angel = false;
     }
     

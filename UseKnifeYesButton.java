@@ -40,11 +40,13 @@ public class UseKnifeYesButton extends Actor
             }
             else
             {
-                if(!TheRedsFighting.theReds || !BigRedFighting.bigRed)
+                if(!TheRedsFighting.theReds && !BigRedFighting.bigRed)
                 {
                     Text text72 = new Text(72);
                     ItemBag world = (ItemBag) getWorld();
                     world.addObject(text72, 600, 400);
+                    ItemOKButton okButton = new ItemOKButton();
+                    world.addObject(okButton, 900, 450);
                 }
                 else
                 {

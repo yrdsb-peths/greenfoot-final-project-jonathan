@@ -29,7 +29,7 @@ public class Wallet extends Actor
     
     public static void lootMoney()
     {
-        wallet += Greenfoot.getRandomNumber(21);
+        wallet += Greenfoot.getRandomNumber(31);
         walletLabel.setValue("$" + wallet);
         
     }

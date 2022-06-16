@@ -55,6 +55,7 @@ public class ItemBag extends World
     {
         numberOfPotionsLabel.setValue("x" + Potion.numberPotions);
         mainCharacterHPLabel.setValue("HP: " + MainCharacterFighting.mainCharacterHP);
+        numberOfKnivesLabel = new Label("x" + ThrowingKnife.numberKnives, 70);
         if(Greenfoot.isKeyDown("escape"))
         {
             Greenfoot.setWorld(returnWorld);
