@@ -27,12 +27,14 @@ public class BuyKnifeButton extends Actor
                 world.addObject(text47, 600, 400);
                 BuyOkButtonRed okButton = new BuyOkButtonRed();
                 world.addObject(okButton, 900, 450);
+                
             }
             
             else
             {
                 ThrowingKnife.numberKnives += 1;
                 Wallet.wallet -= 25;
+                Greenfoot.playSound("Purchase.wav");
             }
         }
     }

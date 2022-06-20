@@ -40,7 +40,7 @@ public class YesButtonHeal extends Actor
             MainCharacterFighting.mainCharacterHP = 100;
             Greenfoot.setWorld(new World2Ver4(getWorld()));
             MainCharacter.canMove = true;
-            
+            Greenfoot.playSound("Rest.wav");
             
             // Saves the character's loadout
             savePotions = Potion.numberPotions;

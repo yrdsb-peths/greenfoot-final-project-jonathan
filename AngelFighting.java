@@ -15,6 +15,7 @@ public class AngelFighting extends Actor
     
     public static int angelHP = 500;
     public static boolean angel = false; // Is true when fighting angel
+    public int random;
     
     // Reset statics
     public static void resetStatic()
@@ -75,6 +76,21 @@ public class AngelFighting extends Actor
             UsePotionYesButton.usedPotion = false;
             FightButton.enemyTurn = true;
             FightButton.enemyTurnAnimations = true;
+            
+            if(random == 1)
+            {
+                Greenfoot.playSound("Thunder1.wav");
+            }
+            
+            if(random == 2)
+            {
+                Greenfoot.playSound("Thunder2.wav");
+            }
+            
+            if(random == 3)
+            {
+                Greenfoot.playSound("Thunder3.wav");
+            }
         }
         else if(FightButton.enemyTurnAnimations)
         {
@@ -133,5 +149,6 @@ public class AngelFighting extends Actor
             angel = false;
             Greenfoot.setWorld(new FinalBattlePost());
         }
+        random = getRandomNumber(1, 3);
     }
 }

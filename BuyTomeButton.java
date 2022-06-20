@@ -36,6 +36,7 @@ public class BuyTomeButton extends Actor
                 Wallet.wallet -= 100;
                 TheShop.relicsBought++;
                 bought = true;
+                Greenfoot.playSound("Purchase.wav");
             }
             else
             {

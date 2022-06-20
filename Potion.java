@@ -46,7 +46,7 @@ public class Potion extends Actor
             {
                  MainCharacterFighting.mainCharacterHP += 40;
             }
-            
+            Greenfoot.playSound("Potion.wav");
         }
         
     }

@@ -20,6 +20,7 @@ public class ShopPotion extends Actor
             world.addObject(buyPotionButton, 400, 450);
             BuyItemNoButton noButton = new BuyItemNoButton();
             world.addObject(noButton, 800, 450);
+            
         }
     }
 }

@@ -51,6 +51,7 @@ public class UseKnifeYesButton extends Actor
                 else
                 {
                     ThrowingKnife.useKnife();    
+                    Greenfoot.playSound("Knife.wav");
                 }
             }
         }

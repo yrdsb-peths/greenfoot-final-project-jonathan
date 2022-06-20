@@ -33,6 +33,7 @@ public class BuyPotionButton extends Actor
             {
                 Potion.numberPotions += 1;
                 Wallet.wallet -= 5;
+                Greenfoot.playSound("Purchase.wav");
             }
         }
     }
