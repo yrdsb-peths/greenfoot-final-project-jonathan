@@ -40,6 +40,7 @@ public class LoadCheckpointButton extends Actor
             TheRedsFighting.resetStatic();
             TheReds.resetStatic();
             BigRedFighting.resetStatic();
+            Angel.Fighting.resetStatic();
             
             // reset other variables
             TempleShrineSpear.resetStatic();

@@ -49,6 +49,7 @@ public class TheReds extends Actor
     public boolean firstTextSpawned = false;
     public void act()
     {
+        talk();
         if(canMove)
         {
             animateWalkRed();
@@ -58,7 +59,7 @@ public class TheReds extends Actor
         {
             setImage("images/WalkCycle/RedIdle.png");
         }
-        talk();
+        
         if(isAtEdge())
         {
             turn(180);
@@ -72,6 +73,7 @@ public class TheReds extends Actor
     public int randomText = getRandomNumber(1, 4);
     public void talk()
     {
+        firstTextSpawned = false;
         if(isTouching(MainCharacter.class) && firstTextSpawned == false && randomText == 1)
         {
             Stronghold world = (Stronghold) getWorld();
