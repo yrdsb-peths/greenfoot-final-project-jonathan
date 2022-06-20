@@ -39,9 +39,16 @@ public class BigRedBattle extends World
         addObject(fightingBagButton, 800, 750);
     }
     
+    public void stopped()
+    {
+        Soundtrack.fightingMusic.pause();
+    }
+    
     public void act()
     {
         mainCharacterHPLabel.setValue("HP: " + MainCharacterFighting.mainCharacterHP);
         redHPLabel.setValue("HP: " + BigRedFighting.bigRedHP);
+        Soundtrack.fightingMusic.playLoop();
+        Soundtrack.stopAllExceptFighting();
     }
 }

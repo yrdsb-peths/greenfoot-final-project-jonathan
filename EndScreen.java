@@ -13,4 +13,15 @@ public class EndScreen extends World
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
         super(1200, 800, 1); 
     }
+    
+    public void stopped()
+    {
+        Soundtrack.victoryMusic.pause();
+    }
+    
+    public void act()
+    {
+        Soundtrack.victoryMusic.playLoop();
+        Soundtrack.stopAllExceptVictory();
+    }
 }

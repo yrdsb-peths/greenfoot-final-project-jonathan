@@ -9,15 +9,20 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class TempleShrineGoblet extends Actor
 {
-    public boolean textSpawned = false;
-    public boolean alreadySet = false;
+    public static boolean textSpawned = false;
+    Text text80 = new Text(80);
+    
+    public static void resetStatic()
+    {
+        textSpawned = false;
+        
+    }
     public void act()
     {
-        Temple world = (Temple) getWorld();
-        
         
         if(isTouching(MainCharacter.class) && !textSpawned && GobletOfYabba.hasGoblet)
         {
+            Temple world = (Temple) getWorld();
             Text text61 = new Text(61);
             world.addObject(text61, 600, 650);
             UseGobletButton useButton = new UseGobletButton();
@@ -35,9 +40,17 @@ public class TempleShrineGoblet extends Actor
         {
             setImage("images/TheShrine.png"); // shrine without anything
         }
-        if(GobletOfYabba.placedGoblet && SpearOfKulbally.placedSpear && TomeOfRebaer.placedTome)
+        if(GobletOfYabba.placedGoblet && SpearOfKulbally.placedSpear && TomeOfRebaer.placedTome && !TempleShrineSpear.textSpawned2)
         {
-            Greenfoot.setWorld(new PreFinalBattle());
+            Temple world = (Temple) getWorld();
+            
+            world.addObject(text80, 600, 650);
+            TempleShrineSpear.textSpawned2 = true;
+            
+        }
+        if(Greenfoot.mouseClicked(text80))
+        {    
+            Greenfoot.setWorld(new TempleCrumble());
         }
     }
 }

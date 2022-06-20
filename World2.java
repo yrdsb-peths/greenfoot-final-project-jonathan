@@ -30,4 +30,14 @@ public class World2 extends World
         Wallet.walletLabel.setValue("$" + Wallet.wallet);
         addObject(Wallet.walletLabel, 100, 20);
     }
+    
+    public void act()
+    {
+        Soundtrack.firstWorldMusic.playLoop();
+    }
+    
+    public void stopped()
+    {
+        Soundtrack.firstWorldMusic.pause();     
+    }
 }

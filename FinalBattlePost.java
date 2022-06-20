@@ -26,8 +26,14 @@ public class FinalBattlePost extends World
         addObject(mainCharacterHPLabel, 100, 60);
     }
     
+    public void stopped()
+    {
+        Soundtrack.bossMusic.pause();
+    }
+    
     public void act()
     {
         mainCharacterHPLabel.setValue("HP: " + MainCharacterFighting.mainCharacterHP);
+        Soundtrack.bossMusic.playLoop();
     }
 }

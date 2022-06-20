@@ -13,7 +13,6 @@ public class AngelPost extends Actor
     Text text79 = new Text(79);
     public void act()
     {     
-        setImage("images/NPCs/AngelFight/AngelFight000.png");
         if(alreadySaid == false)
         {
             FinalBattlePost world = (FinalBattlePost) getWorld();
@@ -31,7 +30,37 @@ public class AngelPost extends Actor
         {
             Greenfoot.setWorld(new EndScreen());
         }
+        animateFight();
+    }
     
+    SimpleTimer animationTimer = new SimpleTimer();
+    GreenfootImage[] fighting = new GreenfootImage[7];
+    
+    public AngelPost()
+    {
+        // Animation for idle
+        for(int i = 0; i < 7; i++)
+        {
+            fighting[i] = new GreenfootImage("images/NPCs/AngelFight/AngelFight00" + i + ".png");
+        }
+        setImage(fighting[0]);
+        
+        animationTimer.mark();
+    }
+    
+    int imageIndex = 0;
+    
+    public void animateFight()
+    {
+        if(animationTimer.millisElapsed() < 90)
+        {
+            return;
+        }
+        animationTimer.mark();
+        
+        setImage(fighting[imageIndex]);
+        imageIndex = (imageIndex + 1) % fighting.length; 
+        
     }
     
 }

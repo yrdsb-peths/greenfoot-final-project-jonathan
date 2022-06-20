@@ -42,6 +42,12 @@ public class Temple extends World
     public void act()
     {
         mainCharacterHPLabel.setValue("HP: " + MainCharacterFighting.mainCharacterHP);
-
+        Soundtrack.templeMusic.playLoop();
+        Soundtrack.stopAllExceptTemple();
+    }
+    
+    public void stopped()
+    {
+        Soundtrack.templeMusic.pause();     
     }
 }

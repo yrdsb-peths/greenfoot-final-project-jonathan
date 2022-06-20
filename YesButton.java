@@ -53,7 +53,7 @@ public class YesButton extends Actor
             RoadToWorld2 road1 = new RoadToWorld2();
             world.addObject(road1, 800, 0);
             Wallet wallet = new Wallet();
-            Wallet.wallet += 300;
+            Wallet.wallet += 5;
             Wallet.walletLabel.setValue("$" + Wallet.wallet);
             world.addObject(Wallet.walletLabel, 100, 20);
             MainCharacter.canMove = true;

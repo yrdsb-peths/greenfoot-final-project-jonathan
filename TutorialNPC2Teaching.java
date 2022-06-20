@@ -17,7 +17,7 @@ public class TutorialNPC2Teaching extends Actor
         talk();
     }
     
-        public void talk()
+    public void talk()
     {
         World2BattleTeach world = (World2BattleTeach) getWorld();
         world.addObject(text12, 600, 400);

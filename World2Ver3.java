@@ -38,5 +38,11 @@ public class World2Ver3 extends World
     public void act()
     {
         mainCharacterHPLabel.setValue("HP: " + MainCharacterFighting.mainCharacterHP);
+        Soundtrack.firstWorldMusic.playLoop();
+    }
+    
+    public void stopped()
+    {
+        Soundtrack.firstWorldMusic.pause();     
     }
 }

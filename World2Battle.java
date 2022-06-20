@@ -44,7 +44,11 @@ public class World2Battle extends World
     {
         mainCharacterHPLabel.setValue("HP: " + MainCharacterFighting.mainCharacterHP);
         tutorialHPLabel.setValue("HP: " + TutorialNPC2Fighting.tutorialHP);
+        Soundtrack.fightingMusic.playLoop();
     }
     
-    
+    public void stopped()
+    {
+        Soundtrack.fightingMusic.pause();     
+    }
 }

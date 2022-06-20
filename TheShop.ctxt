@@ -7,4 +7,6 @@ comment2.params=returnWorld
 comment2.target=TheShop(greenfoot.World)
 comment3.params=
 comment3.target=void\ act()
-numComments=4
+comment4.params=
+comment4.target=void\ stopped()
+numComments=5

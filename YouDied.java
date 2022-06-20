@@ -27,4 +27,15 @@ public class YouDied extends World
         }
             
     }
+    
+    public void stopped()
+    {
+        Soundtrack.deathMusic.pause();
+    }
+    
+    public void act()
+    {
+        Soundtrack.stopAllExceptDeath();
+        Soundtrack.deathMusic.playLoop();
+    }
 }

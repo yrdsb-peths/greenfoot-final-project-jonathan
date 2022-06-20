@@ -26,8 +26,14 @@ public class BigRedBattleAfter extends World
         addObject(mainCharacterHPLabel, 100, 60);
     }
     
+    public void stopped()
+    {
+        Soundtrack.fightingMusic.pause();
+    }
+    
     public void act()
     {
         mainCharacterHPLabel.setValue("HP: " + MainCharacterFighting.mainCharacterHP);
+        Soundtrack.fightingMusic.playLoop();
     }
 }

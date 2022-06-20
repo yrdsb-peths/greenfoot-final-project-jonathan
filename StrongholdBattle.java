@@ -43,5 +43,12 @@ public class StrongholdBattle extends World
     {
         mainCharacterHPLabel.setValue("HP: " + MainCharacterFighting.mainCharacterHP);
         redHPLabel.setValue("HP: " + TheRedsFighting.redHP);
+        Soundtrack.fightingMusic.playLoop();
+        Soundtrack.stopAllExceptFighting();
+    }
+    
+    public void stopped()
+    {
+        Soundtrack.fightingMusic.pause();     
     }
 }

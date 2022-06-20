@@ -35,8 +35,14 @@ public class RedShop extends World
         
     }
     
+    public void stopped()
+    {
+        Soundtrack.secondWorldMusic.pause();     
+    }
+    
     public void act()
     {
         Wallet.walletLabel.setValue("$" + Wallet.wallet);
+        Soundtrack.secondWorldMusic.playLoop();
     }
 }

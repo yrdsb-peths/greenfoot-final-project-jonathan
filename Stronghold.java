@@ -44,8 +44,12 @@ public class Stronghold extends World
     public void act()
     {
         mainCharacterHPLabel.setValue("HP: " + MainCharacterFighting.mainCharacterHP);
-
+        Soundtrack.secondWorldMusic.playLoop();
+        Soundtrack.stopAllExceptWorld2();
     }
     
-    
+    public void stopped()
+    {
+        Soundtrack.secondWorldMusic.pause();     
+    }
 }

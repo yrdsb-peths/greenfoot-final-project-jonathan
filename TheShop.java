@@ -70,6 +70,11 @@ public class TheShop extends World
     public void act()
     {
         Wallet.walletLabel.setValue("$" + Wallet.wallet);
+        Soundtrack.firstWorldMusic.playLoop();
     }
-
+    
+    public void stopped()
+    {
+        Soundtrack.firstWorldMusic.pause();     
+    }
 }

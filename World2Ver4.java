@@ -44,5 +44,12 @@ public class World2Ver4 extends World
     {
         mainCharacterHPLabel.setValue("HP: " + MainCharacterFighting.mainCharacterHP);
         Wallet.walletLabel.setValue("$" + Wallet.wallet);
+        Soundtrack.firstWorldMusic.playLoop();
+        Soundtrack.stopAllExceptWorld1();
+    }
+    
+    public void stopped()
+    {
+        Soundtrack.firstWorldMusic.pause();     
     }
 }

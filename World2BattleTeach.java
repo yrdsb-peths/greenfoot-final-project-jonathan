@@ -32,4 +32,15 @@ public class World2BattleTeach extends World
         
         
     }
+    
+    public void act()
+    {
+        Soundtrack.fightingMusic.playLoop();
+        Soundtrack.stopAllExceptFighting();
+    }
+    
+    public void stopped()
+    {
+        Soundtrack.fightingMusic.pause();     
+    }
 }

@@ -61,5 +61,18 @@ public class ItemBag extends World
             Greenfoot.setWorld(returnWorld);
             
         }
+        
+    }
+    
+    public void stopped()
+    {
+        Soundtrack.bossMusicPre.pause();
+        Soundtrack.bossMusic.pause();
+        Soundtrack.fightingMusic.pause();
+        Soundtrack.firstWorldMusic.pause();
+        Soundtrack.secondWorldMusic.pause();
+        Soundtrack.victoryMusic.pause();
+        Soundtrack.templeMusic.pause();
+        
     }
 }

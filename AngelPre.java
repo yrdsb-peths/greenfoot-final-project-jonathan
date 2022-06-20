@@ -14,23 +14,22 @@ public class AngelPre extends Actor
     Text text77 = new Text(77);
     public void act()
     {     
-        setImage("images/NPCs/AngelFight/AngelFight000.png");
         if(alreadySaid == false)
         {
-            PreFinalBattle world = (PreFinalBattle) getWorld();
+            FinalBattlePre world = (FinalBattlePre) getWorld();
             world.addObject(text75, 600, 650);
             alreadySaid = true;
         }
             
         if(Greenfoot.mouseClicked(text75))
         {
-            PreFinalBattle world = (PreFinalBattle) getWorld();
+            FinalBattlePre world = (FinalBattlePre) getWorld();
             world.addObject(text76, 600, 650);
         }
         
         if(Greenfoot.mouseClicked(text76))
         {
-            PreFinalBattle world = (PreFinalBattle) getWorld();
+            FinalBattlePre world = (FinalBattlePre) getWorld();
             world.addObject(text77, 600, 650);
         }
         
@@ -38,5 +37,36 @@ public class AngelPre extends Actor
         {
             Greenfoot.setWorld(new FinalBattle());
         }
+        animateFight();
+    }
+    
+    SimpleTimer animationTimer = new SimpleTimer();
+    GreenfootImage[] fighting = new GreenfootImage[7];
+    
+    public AngelPre()
+    {
+        // Animation for idle
+        for(int i = 0; i < 7; i++)
+        {
+            fighting[i] = new GreenfootImage("images/NPCs/AngelFight/AngelFight00" + i + ".png");
+        }
+        setImage(fighting[0]);
+        
+        animationTimer.mark();
+    }
+    
+    int imageIndex = 0;
+    
+    public void animateFight()
+    {
+        if(animationTimer.millisElapsed() < 90)
+        {
+            return;
+        }
+        animationTimer.mark();
+        
+        setImage(fighting[imageIndex]);
+        imageIndex = (imageIndex + 1) % fighting.length; 
+        
     }
 }

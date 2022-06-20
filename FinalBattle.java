@@ -39,9 +39,16 @@ public class FinalBattle extends World
         addObject(fightingBagButton, 800, 750);
     }
     
+    public void stopped()
+    {
+        Soundtrack.bossMusic.pause();
+    }
+    
     public void act()
     {
         mainCharacterHPLabel.setValue("HP: " + MainCharacterFighting.mainCharacterHP);
         angelHPLabel.setValue("HP: " + AngelFighting.angelHP);
+        Soundtrack.bossMusic.playLoop();
+        Soundtrack.stopAllExceptBoss();
     }
 }

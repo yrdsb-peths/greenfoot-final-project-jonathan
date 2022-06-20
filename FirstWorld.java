@@ -24,6 +24,8 @@ public class FirstWorld extends World
         TutorialNPC friendNPC = new TutorialNPC();
         addObject(friendNPC, 800, 400);
         
+        Soundtrack.setVolume();
+        
         // Reset all variables
         Wallet.resetStatic();
         TutorialNPC2Fighting.resetStatic();
@@ -42,10 +44,19 @@ public class FirstWorld extends World
         BigRedFighting.resetStatic();
         AngelFighting.resetStatic();
         ThrowingKnife.resetStatic();
-        
+        TempleShrineSpear.resetStatic();
+        TempleShrineTome.resetStatic();
+        TempleShrineGoblet.resetStatic();
     }
     
+    public void act()
+    {
+        Soundtrack.firstWorldMusic.playLoop();
+        Soundtrack.stopAllExceptWorld1();
+    }
     
-    
-
+    public void stopped()
+    {
+        Soundtrack.firstWorldMusic.pause();
+    }
 }

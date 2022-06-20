@@ -21,6 +21,7 @@ public class NoButtonRelicUse extends Actor
         if(Greenfoot.mouseClicked(this))
         {
             MainCharacter.canMove = true;
+            Greenfoot.setWorld(new Temple(getWorld()));
         }
     }
 }

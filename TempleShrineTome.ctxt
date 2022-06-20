@@ -2,5 +2,7 @@
 comment0.target=TempleShrineTome
 comment0.text=\r\n\ The\ shrines\ of\ the\ temples\r\n\ Holy\ Relics\ must\ be\ placed\ here\ for\ something\ to\ happen\r\n\ \r\n\ @author\ Jonathan\ Zhao\r\n\ @version\ June\ 7\r\n
 comment1.params=
-comment1.target=void\ act()
-numComments=2
+comment1.target=void\ resetStatic()
+comment2.params=
+comment2.target=void\ act()
+numComments=3

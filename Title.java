@@ -23,6 +23,7 @@ public class Title extends World
             FirstWorld gameWorld = new FirstWorld();
             Greenfoot.setWorld(gameWorld);
         }
+        Soundtrack.stopAll();
     }
     
     /**

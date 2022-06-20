@@ -40,8 +40,11 @@ public class TheGates extends World
     public void act()
     {
         mainCharacterHPLabel.setValue("HP: " + MainCharacterFighting.mainCharacterHP);
-
+        Soundtrack.secondWorldMusic.playLoop();
     }
     
-    
+    public void stopped()
+    {
+        Soundtrack.secondWorldMusic.pause();     
+    }
 }
