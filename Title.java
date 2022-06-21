@@ -2,6 +2,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
  * Title screen of game
+ * Game starts here
  * 
  * @author Jonathan Zhao
  * @version 1
