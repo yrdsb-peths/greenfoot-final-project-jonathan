@@ -70,7 +70,7 @@ public class TheReds extends Actor
     Text text58 = new Text(58);
     Text text59 = new Text(59);
     Text text60 = new Text(60);
-    public int randomText = getRandomNumber(1, 4);
+    public int randomText = getRandomNumber(1, 3);
     public void talk()
     {
         firstTextSpawned = false;
