@@ -8,8 +8,8 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class ItemBag extends World
 {   
-    Label numberOfPotionsLabel = new Label("x" + Potion.numberPotions, 70);
-    Label numberOfKnivesLabel = new Label("x" + ThrowingKnife.numberKnives, 70);
+    public static Label numberOfPotionsLabel = new Label("x" + Potion.numberPotions, 70);
+    public static Label numberOfKnivesLabel = new Label("x" + ThrowingKnife.numberKnives, 70);
     Label mainCharacterHPLabel = new Label("HP: " + MainCharacterFighting.mainCharacterHP, 50);
     World returnWorld;
     
@@ -55,7 +55,7 @@ public class ItemBag extends World
     {
         numberOfPotionsLabel.setValue("x" + Potion.numberPotions);
         mainCharacterHPLabel.setValue("HP: " + MainCharacterFighting.mainCharacterHP);
-        numberOfKnivesLabel = new Label("x" + ThrowingKnife.numberKnives, 70);
+        numberOfKnivesLabel.setValue("x" + ThrowingKnife.numberKnives);
         if(Greenfoot.isKeyDown("escape"))
         {
             Greenfoot.setWorld(returnWorld);

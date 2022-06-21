@@ -9,6 +9,11 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 public class TheShop extends World
 {
     World returnWorld;
+    // Price tags
+    public static Label potionPriceTag = new Label("$5", 50);
+    public static Label gobletPriceTag = new Label("$100", 50);
+    public static Label spearPriceTag = new Label("$100", 50);
+    public static Label tomePriceTag = new Label("$100", 50);
     
     public static int relicsBought = 0;
     public static void resetStatic()
@@ -32,11 +37,7 @@ public class TheShop extends World
         Wallet.walletLabel.setValue("$" + Wallet.wallet);
         addObject(Wallet.walletLabel, 100, 20);
         
-        // Price tags
-        Label potionPriceTag = new Label("$5", 50);
-        Label gobletPriceTag = new Label("$100", 50);
-        Label spearPriceTag = new Label("$100", 50);
-        Label tomePriceTag = new Label("$100", 50);
+        
         addObject(potionPriceTag, 200, 450);
         
         

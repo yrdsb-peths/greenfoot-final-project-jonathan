@@ -19,7 +19,7 @@ public class Potion extends Actor
     public void act()
     {
         setImage("images/Potion.png");
-        if(Greenfoot.mouseClicked(this))
+        if(Greenfoot.mouseClicked(this) || Greenfoot.mouseClicked(ItemBag.numberOfPotionsLabel))
         {
             ItemBag world = (ItemBag) getWorld();
             Text text41 = new Text(41); 

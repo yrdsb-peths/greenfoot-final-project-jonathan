@@ -11,7 +11,7 @@ public class ShopKnife extends Actor
     public void act()
     {
         setImage("images/ThrowingKnife.png");
-        if(Greenfoot.mouseClicked(this))
+        if(Greenfoot.mouseClicked(this) || Greenfoot.mouseClicked(RedShop.knifePriceTag))
         {
             RedShop world = (RedShop) getWorld();
             Text text74 = new Text(74); 

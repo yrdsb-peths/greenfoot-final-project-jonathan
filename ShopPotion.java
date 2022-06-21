@@ -11,7 +11,7 @@ public class ShopPotion extends Actor
     public void act()
     {
         setImage("images/Potion.png");
-        if(Greenfoot.mouseClicked(this))
+        if(Greenfoot.mouseClicked(this) || Greenfoot.mouseClicked(TheShop.potionPriceTag))
         {
             TheShop world = (TheShop) getWorld();
             Text text43 = new Text(43); 

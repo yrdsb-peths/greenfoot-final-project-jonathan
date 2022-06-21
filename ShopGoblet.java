@@ -12,7 +12,7 @@ public class ShopGoblet extends Actor
     public void act()
     {
         setImage("images/TheGobletOfYabba.png");
-        if(Greenfoot.mouseClicked(this))
+        if(Greenfoot.mouseClicked(this) || Greenfoot.mouseClicked(TheShop.gobletPriceTag))
         {
             TheShop world = (TheShop) getWorld();
             Text text44 = new Text(44); 

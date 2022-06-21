@@ -11,7 +11,7 @@ public class ShopSpear extends Actor
     public void act()
     {
         setImage("images/TheSpearOfKulbally.png");
-        if(Greenfoot.mouseClicked(this))
+        if(Greenfoot.mouseClicked(this) || Greenfoot.mouseClicked(TheShop.spearPriceTag))
         {
             TheShop world = (TheShop) getWorld();
             Text text45 = new Text(45); 

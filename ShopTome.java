@@ -11,7 +11,7 @@ public class ShopTome extends Actor
     public void act()
     {
         setImage("images/TheTomeOfRebaer.png");
-        if(Greenfoot.mouseClicked(this))
+        if(Greenfoot.mouseClicked(this) || Greenfoot.mouseClicked(TheShop.tomePriceTag))
         {
             TheShop world = (TheShop) getWorld();
             Text text46 = new Text(46); 

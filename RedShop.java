@@ -9,6 +9,9 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 public class RedShop extends World
 {
     World returnWorld;
+    // Price tags
+    public static Label knifePriceTag = new Label("$25", 50);
+        
     
     public RedShop(World returnWorld)
     {    
@@ -28,8 +31,6 @@ public class RedShop extends World
         Wallet.walletLabel.setValue("$" + Wallet.wallet);
         addObject(Wallet.walletLabel, 100, 20);
         
-        // Price tags
-        Label knifePriceTag = new Label("$25", 50);
         addObject(knifePriceTag, 200, 450);
         
         

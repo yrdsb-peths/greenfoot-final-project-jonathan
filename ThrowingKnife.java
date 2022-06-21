@@ -19,7 +19,7 @@ public class ThrowingKnife extends Actor
     public void act()
     {
         setImage("images/ThrowingKnife.png");
-        if(Greenfoot.mouseClicked(this))
+        if(Greenfoot.mouseClicked(this) || Greenfoot.mouseClicked(ItemBag.numberOfKnivesLabel))
         {
             ItemBag world = (ItemBag) getWorld();
             Text text73 = new Text(73); 
